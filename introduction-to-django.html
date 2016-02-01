@@ -1,44 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Person">
 <head>
-	<meta charset="utf-8">
-	<title>Introduction to Django — Vive La Vida</title>
-	<meta name="description" content="Title: Introduction to Django; Date: 2016-02-01; Author: MarkWh1te">
-	<meta name="author" content="MarkWh1te">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-	<!--[if lt IE 9]>
-		<script src="/theme/html5.js"></script>
-		<![endif]-->
-	<link href="/theme/css/ipython.css" rel="stylesheet">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet">
-	<link href="/theme/css/local.css" rel="stylesheet">
-	<link href="/theme/css/pygments.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <!-- Site Meta Data -->
+  <title>Introduction to Django</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="MarkWh1te">
+
+  <link rel="shortcut icon" href="http://7xq2dq.com1.z0.glb.clouddn.com/Letter-M-blue-icon.png">
+
+  <!-- schema.org -->
+  <meta itemprop="name" content="seahouse">
+  <meta itemprop="image" content="">
+  <meta itemprop="description" content="">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <!-- Style Meta Data -->
+  <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+
+  <!-- Feed Meta Data -->
+
+  <!-- Twitter Feed -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="markw1te">
+  <meta name="twitter:image" content="">
+
+<meta name="twitter:creator" content="markw1te">
+<meta name="twitter:url" content="/introduction-to-django.html">
+<meta name="twitter:title" content="seahouse ~ Introduction to Django">
+<meta name="twitter:description" content="<h1>Django 简介</h1>
+<hr />
+<h2>1.  初识Django</h2>
+<blockquote>
+<p>django一种由Python写成的web开发框架，它源自于在线新闻web站点，在2005年的时候以开源的形式。它在Web开发领域的有很多优势，比如自带方便好用的ORM，即时生成的admin interface，还有详细错误提示等。目前我们公司的极客理财师平台就是用Django框架搭建的。在本文中我将对Django最主要的URLconf和View,template system，models stytem,这三个系统进行简单的介绍， 并将Django和同样为Python web开放框架之一的Flask进行一个简单的比较。</p>
+</blockquote>
+<h2>2. URLconf和 View</h2>
+<blockquote>
+<p>Django是一个MVC框架，即将一个Web应用划分成三个部分：Model（负责与数据库相关的业务），View（负责将数据格式化后呈现给用户），Control(负责接受用户的操作，根据操作来和数据库互动，并调用View展示数据)。而MCV中的Control部分鹤View部分就分别由django中的urls.py和views.py来完成。</p>
+</blockquote>
+<p>比如我们此时需要做一个最简单的hello world的演示：</p>
+<blockquote>
+<p>首先我们要写一个view来实现对请求进行回应，在Django中视图是一个函数，该函数接受一个HttpRequest参数，并返回一个HttpResponse。我们可以在任何地方定义这个函数，但通常会放在Django app 的 views.py 文件中 ...</p></blockquote>">
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="seahouse ~ Introduction to Django" />
+<meta property="og:description" content="<h1>Django 简介</h1>
+<hr />
+<h2>1.  初识Django</h2>
+<blockquote>
+<p>django一种由Python写成的web开发框架，它源自于在线新闻web站点，在2005年的时候以开源的形式。它在Web开发领域的有很多优势，比如自带方便好用的ORM，即时生成的admin interface，还有详细错误提示等。目前我们公司的极客理财师平台就是用Django框架搭建的。在本文中我将对Django最主要的URLconf和View,template system，models stytem,这三个系统进行简单的介绍， 并将Django和同样为Python web开放框架之一的Flask进行一个简单的比较。</p>
+</blockquote>
+<h2>2. URLconf和 View</h2>
+<blockquote>
+<p>Django是一个MVC框架，即将一个Web应用划分成三个部分：Model（负责与数据库相关的业务），View（负责将数据格式化后呈现给用户），Control(负责接受用户的操作，根据操作来和数据库互动，并调用View展示数据)。而MCV中的Control部分鹤View部分就分别由django中的urls.py和views.py来完成。</p>
+</blockquote>
+<p>比如我们此时需要做一个最简单的hello world的演示：</p>
+<blockquote>
+<p>首先我们要写一个view来实现对请求进行回应，在Django中视图是一个函数，该函数接受一个HttpRequest参数，并返回一个HttpResponse。我们可以在任何地方定义这个函数，但通常会放在Django app 的 views.py 文件中 ...</p></blockquote>" />
+<meta property="og:image" content="" />
 </head>
+
 <body>
-<div class="container">
-	<div class="page-header">
-		<h1><a href="/">Vive La Vida</a>
-			<br><small>My blood will never run cold.</small></h1>	</div>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="text-center article-header">
-		<h1 itemprop="name headline" class="article-title">Introduction to Django</h1>
-		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<h4 itemprop="name">MarkWh1te</h4>
-		</span>
-		<time datetime="2016-02-01T18:31:00+01:00" itemprop="datePublished">Mon 01 February 2016</time>
-	</div>
-	<div>
-		Category:
-		<span itemprop="articleSection">
-			<a href="/category/django.html" rel="category">Django</a>
-		</span>
-	</div>
-	<div itemprop="articleBody" class="article-body"><h1>Django 简介</h1>
+  <!-- Sidebar -->
+  <aside>
+    <!--<center><a href=""><img id="avatar" src=""></a></center>-->
+    <h1>seahouse</h1>
+    <br>
+
+      <a class="twitter-follow-button"
+      href="https://twitter.com/markw1te"
+      data-show-count="false"
+      data-lang="en">
+      Follow @twitterdev
+      </a>
+      <script type="text/javascript">
+      window.twttr = (function (d, s, id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src= "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+      }(document, "script", "twitter-wjs"));
+      </script>
+
+    <nav class="nav">
+      <ul class="list-bare">
+      
+          <li><a class="nav__link" href="http://markwh1te.github.io">Blog</a></li>
+          <li><a class="nav__link" href="http://markwh1te.github.io/categories.html">category</a></li>
+         
+         
+      </ul>
+    </nav>
+
+    <p class="social">
+        <a href="https://www.facebook.com/profile.php?id=100011152545986" target="_blank" ><img src="/theme/images/icons/facebook.png"></a>
+        <a href="https://github.com/MarkWh1te" target="_blank" ><img src="/theme/images/icons/github.png"></a>
+        <a href="https://twitter.com/markw1te" target="_blank" ><img src="/theme/images/icons/twitter.png"></a>
+    </p>
+
+    <!--
+    <h2>Categories</h2>
+    <ul class="navbar">
+      <li class="active"><a href="/category/django.html">Django</a></li>
+      <li><a href="/category/web.html">Web</a></li>
+    </ul> 
+    -->
+  </aside>
+
+  <!-- Content -->
+  <article>
+<section id="content">
+    <article>
+        <h2 class="post_title post_detail"><a href="/introduction-to-django.html" rel="bookmark" title="Permalink to Introduction to Django">Introduction to Django</a></h2>
+        <div class="entry-content blog-post">
+            <h1>Django 简介</h1>
 <hr />
 <h2>1.  初识Django</h2>
 <blockquote>
@@ -253,90 +332,56 @@ def hello():
 <p>在这也从侧面体现出了falsk比较适合小型网站的开发，django更适合大中型网站的开发。</p>
 <ul>
 <li>学习路径:由于Flask鼓励高度定制,所以学习Flask的过程更像是在学习不同组件的过程,比如一开始学习数据库,在教程中会先用cursor写原生的SQL语言写起, 然后才会介绍给你如sqlalchemy这样的ORM,又比如在学习表单时,则要学习名称很容易让人产生误会WTForms模块.而在学习Django的过程中,这些都不是问题,因为Django自带ORM也有关于表单库.所以学习Django的过程, 更多的是学习Django所提供的每个库的使用.如果要做一个简单的评价的话,我觉得在学习Flask的过程可以更多地去了解到开发过程的中每个细节的问题,而学习Django的过程则能更快地完成一个项目,获得更多的成就感,让自己更有信心的学习下去.</li>
-</ul></div>
-	<hr>
-	<h2>Comments</h2>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="markw1te">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'markwh1te'; 
-    var disqus_title = 'Introduction to Django';
+</ul>
+        </div>
+        <div class="post_list">
+            <span>By </span>
+            <a href="/author/markwh1te.html">@MarkWh1te</a>
+            <span> in </span>
+            <span class="post_category"><a href="/category/django.html" rel="bookmark" title="Permalink to Django">[ Django ]</a></span>
+            <span class="post_date">Mon 01 February 2016</span>
+            <div><span>Tags : </span>
+            </div>
 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-		</div>
-	</div> 	<!-- <hr> -->
-</div> <!-- /container -->
-<footer class="aw-footer bg-danger">
-	<div class="container"> <!-- footer -->
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="row">
-					<div class="col-md-3">
-						<h4>Navigation</h4>
-						<ul class="list-unstyled my-list-style">
-							<li><a href="">Vive La Vida</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<h4>Author</h4>
-						<ul class="list-unstyled my-list-style">
-							<li><a href="https://www.facebook.com/profile.php?id=100011152545986">facebook</a></li>
-							<li><a href="https://www.quora.com/profile/TianJun-Ma">quora</a></li>
-							<li><a href="https://www.zhihu.com/people/wh1te">知乎</a></li>
-							<li><a href="https://twitter.com/markw1te">twitter</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<h4>Categories</h4>
-						<ul class="list-unstyled my-list-style">
-							<li><a href="/category/Django.html">Django (1)</a></li>
-							<li><a href="/category/Python.html">Python (1)</a></li>
-							<li><a href="/category/Web.html">Web (1)</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<h4>Links</h4>
-						<ul class="list-unstyled my-list-style">
-							<li><a href="http://python.org/">Python.org</a></li>
-							<li><a href="https://www.icrc.org/">ICRC</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 text-center center-block aw-bottom">
-			<p>&copy; MarkWh1te 2014</p>
-			<p>Powered by Pelican</p>
-		</div>
-	</div>
-</div>
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-	$("div.collapseheader").click(function () {
-		$header = $(this).children("span").first();
-		$codearea = $(this).children(".input_area");
-		$codearea.slideToggle(500, function () {
-			$header.text(function () {
-				return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-			});
-		});
-	});
-});
-</script>
-<a href="https://github.com/MarkWh1te"><img style="position: absolute; top: 40px; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;" title="Twitter" href="https://twitter.com/share?url=/introduction-to-django.html&text=Introduction to Django&via=markw1te"><img src="/theme/images/icons/twitter-s.png"></a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +" href="https://plus.google.com/share?url=/introduction-to-django.html&hl=fr" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="/theme/images/icons/google-s.png"></a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" href="https://www.facebook.com/sharer.php?u=/introduction-to-django.html&t=Introduction to Django"><img src="/theme/images/icons/facebook-s.png"></a></span>
+
+                <a  target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=/introduction-to-django.html&title=Introduction to Django" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="/theme/images/icons/linkedin-s.png"></a>
+
+                <span class="mail"><a href="mailto:?subject=Introduction to Django&amp;body=Viens découvrir un article à propos de [Introduction to Django] sur le site de MarkWh1te. /introduction-to-django.html" title="Share by Email" target="_blank"><img src="/theme/images/icons/mail-s.png"></a></span>
+            </div>
+        </div>
+        <div class="comments">
+            <h2>Comments !</h2>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+            var disqus_identifier = "introduction-to-django.html";
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://markwh1te.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] ||
+                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            </script>
+        </div>
+    </article>
+</section>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      Blog powered by <a href="http://getpelican.com/">Pelican</a>, 
+      which takes great advantage of <a href="http://python.org">Python</a>.
+      Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
+    </p>
+  </footer>
+
+
 </body>
 </html>
