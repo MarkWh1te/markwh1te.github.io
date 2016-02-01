@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Vive la vida</title>
+	<title>Vive La Vida</title>
 	<meta name="description" content="Coding, scientific development, finance, data analysis, visualization, statistics, and machine learning">
 	<meta name="author" content="MarkWh1te">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,11 +20,41 @@
 <body>
 <div class="container">
 	<div class="page-header">
-		<h1><a href="/">Vive la vida</a>
-			<br>	</div>
+		<h1><a href="/">Vive La Vida</a>
+			<br><small>My blood will never run clod.</small></h1>	</div>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
         
+        
+<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
+	<a href="/introduction-to-django.html">
+		<h2 itemprop="name headline">Introduction to Django</h2>
+	</a>
+	<time datetime="2016-02-01T18:31:00+01:00" itemprop="datePublished">Mon 01 February 2016</time>
+	&nbsp;—&nbsp;
+	<span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+		<span itemprop="name">MarkWh1te</span>
+	</span>
+	<div class="summary"><h1>Django 简介</h1>
+<hr />
+<h2>1.  初识Django</h2>
+<blockquote>
+<p>django一种由Python写成的web开发框架，它源自于在线新闻web站点，在2005年的时候以开源的形式。它在Web开发领域的有很多优势，比如自带方便好用的ORM，即时生成的admin interface，还有详细错误提示等。目前我们公司的极客理财师平台就是用Django框架搭建的。在本文中我将对Django最主要的URLconf和View,template system，models stytem,这三个系统进行简单的介绍， 并将Django和同样为Python web开放框架之一的Flask进行一个简单的比较。</p>
+</blockquote>
+<h2>2. URLconf和 View</h2>
+<blockquote>
+<p>Django是一个MVC框架，即将一个Web应用划分成三个部分：Model（负责与数据库相关的业务），View（负责将数据格式化后呈现给用户），Control(负责接受用户的操作，根据操作来和数据库互动，并调用View展示数据)。而MCV中的Control部分鹤View部分就分别由django中的urls.py和views.py来完成。</p>
+</blockquote>
+<p>比如我们此时需要做一个最简单的hello world的演示：</p>
+<blockquote>
+<p>首先我们要写一个view来实现对请求进行回应，在Django中视图是一个函数，该函数接受一个HttpRequest参数，并返回一个HttpResponse。我们可以在任何地方定义这个函数，但通常会放在Django app 的 views.py 文件中 ...</p></blockquote></div>
+	Category:
+	<span itemprop="articleSection">
+		<a href="/category/django.html" rel="category">Django</a>
+	</span>
+	Tags:
+</div>
+<hr>
         
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
 	<a href="/introduction-to-REST.html">
@@ -95,7 +125,7 @@
 					<div class="col-md-3">
 						<h4>Navigation</h4>
 						<ul class="list-unstyled my-list-style">
-							<li><a href="">Vive la vida</a></li>
+							<li><a href="">Vive La Vida</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">
@@ -110,6 +140,7 @@
 					<div class="col-md-3">
 						<h4>Categories</h4>
 						<ul class="list-unstyled my-list-style">
+							<li><a href="/category/Django.html">Django (1)</a></li>
 							<li><a href="/category/Python.html">Python (1)</a></li>
 							<li><a href="/category/Web.html">Web (1)</a></li>
 						</ul>
