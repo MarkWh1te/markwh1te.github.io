@@ -1,5 +1,6 @@
 #+TITLE: MarkWhite Personal Wiki
 #+BIND: org-html-validation-link nil
+#+OPTIONS: toc:nil        
 
 * Python
 ** [[file:syntax.org][syntax]]
