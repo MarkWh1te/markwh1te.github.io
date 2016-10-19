@@ -1,0 +1,24 @@
+#+TITLE: MarkWhite Personal Wiki
+#+BIND: org-html-validation-link nil
+
+* Python
+** [[file:syntax.org][syntax]]
+** django
+** flask 
+** celery
+** pip
+** good libiary
+* Emacs
+** spacemacs
+** vim shortcut
+** org mode
+* Linux 
+** shell
+** app
+* Algorithms
+** algorithms
+** text book and  website
+* Life
+** what worth fighting for
+** good youtube vedio
+
