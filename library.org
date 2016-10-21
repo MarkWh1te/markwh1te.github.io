@@ -2,7 +2,6 @@
 #+BIND: org-html-validation-link nil
 
 * Socket
-** [[http://www.tutorialspoint.com/python/python_networking.htm][socket turtorial]]
 
 * Python Basic Library 
 python除了关键字（keywords）和内置的类型和函数（builtins）,更多的功能是通过libraries（即modules）来提供的。
@@ -562,5 +561,3 @@ optparse，optparse模块更高级别来处理UNIX style的命令行选项sys.ar
 
   希望本教程激发了你对Spark的兴趣，并掌握了如何用PySpark编写我们熟悉的Python代码，同时利用分布式处理的优势。在涉及更大数据集的工作中，PySpark会大放光芒，因为它模糊了数据科学在“本地计算机”与“大型在线分布式计算（也被称作云）”中的界限。 
   如果你喜欢本教程，可以去Dataquest 阅读下一章节（英文版），下一章会进一步讲解Spark的转换与行动
-
-
