@@ -5,7 +5,7 @@
 * Python
 ** [[file:syntax.org][syntax]]
 ** [[file:django.org][django]]
-** [[file:flasky.org][flasky]]
+** [[file:flask.org][flask]]
 ** [[file:celery.org][celery]]
 ** [[file:library.org][library]]
 * Emacs

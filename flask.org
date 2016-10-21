@@ -1,4 +1,4 @@
-#+TITLE: MarkWhite Personal Wiki
+#+TITLE: Flask
 #+BIND: org-html-validation-link nil
 
 * Flasky
