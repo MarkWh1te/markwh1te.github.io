@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-21 Fri 18:56 -->
+<!-- 2016-10-21 Fri 18:36 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>MarkWhite Personal Wiki</title>
@@ -144,85 +144,72 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">MarkWhite Personal Wiki</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline2">1. Don't pass model objects to tasks</a>
+<ul>
+<li><a href="#orgheadline1">1.1. Since tasks don't run immediately, by the time a task runs and looks at a model object that was passed to it, the corresponding record in the database might have changed. If the task then does something to the model object and saves it, those changes in the database are overwritten by older data.</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline3">2. celery 清空队列中所有未完成的任务</a></li>
+<li><a href="#orgheadline4">3. celery 设置worker 的数量</a></li>
+<li><a href="#orgheadline5">4. django celery 不执行　send due task</a></li>
+</ul>
+</div>
+</div>
 
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6"><span class="section-number-2">1</span> Python</h2>
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2"><span class="section-number-2">1</span> Don't pass model objects to tasks</h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-orgheadline1" class="outline-3">
-<h3 id="orgheadline1"><span class="section-number-3">1.1</span> <a href="syntax.html">syntax</a></h3>
-</div>
-<div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2"><span class="section-number-3">1.2</span> <a href="django.html">django</a></h3>
-</div>
-<div id="outline-container-orgheadline3" class="outline-3">
-<h3 id="orgheadline3"><span class="section-number-3">1.3</span> <a href="flasky.html">flasky</a></h3>
-</div>
-<div id="outline-container-orgheadline4" class="outline-3">
-<h3 id="orgheadline4"><span class="section-number-3">1.4</span> <a href="celery.html">celery</a></h3>
-</div>
-<div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5"><span class="section-number-3">1.5</span> <a href="library.html">library</a></h3>
-</div>
-</div>
-<div id="outline-container-orgheadline10" class="outline-2">
-<h2 id="orgheadline10"><span class="section-number-2">2</span> Emacs</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7"><span class="section-number-3">2.1</span> spacemacs</h3>
-<div class="outline-text-3" id="text-2-1">
+<h3 id="orgheadline1"><span class="section-number-3">1.1</span> Since tasks don't run immediately, by the time a task runs and looks at a model object that was passed to it, the corresponding record in the database might have changed. If the task then does something to the model object and saves it, those changes in the database are overwritten by older data.</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
-<a href="https://github.com/syl20bnr/spacemacs/tree/master/layers">view layers doc</a>
+It's almost always safer to save the object, pass the record's key, and look up the object again in the task
+</p>
+<div class="org-src-container">
+
+<pre class="src src-python">myobject.save<span style="color: #268bd2;">()</span>
+mytask.delay<span style="color: #268bd2;">(</span>myobject.pk<span style="color: #268bd2;">)</span>
+<span style="color: #af005f; font-weight: bold;">@task</span>
+<span style="color: #268bd2; font-weight: bold;">def</span> <span style="color: #8700af; font-weight: bold;">mytask</span><span style="color: #268bd2;">(</span>pk<span style="color: #268bd2;">)</span>:
+    <span style="color: #af5fd7;">myobject</span> = MyModel.objects.get<span style="color: #268bd2;">(</span>pk=pk<span style="color: #268bd2;">)</span>
+    ...
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3"><span class="section-number-2">2</span> celery 清空队列中所有未完成的任务</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+celery -A proj purge
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8"><span class="section-number-3">2.2</span> vim shortcut</h3>
-</div>
-<div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9"><span class="section-number-3">2.3</span> org mode</h3>
-</div>
-</div>
-<div id="outline-container-orgheadline13" class="outline-2">
-<h2 id="orgheadline13"><span class="section-number-2">3</span> Linux</h2>
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><span class="section-number-2">3</span> celery 设置worker 的数量</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-orgheadline11" class="outline-3">
-<h3 id="orgheadline11"><span class="section-number-3">3.1</span> shell</h3>
-</div>
-<div id="outline-container-orgheadline12" class="outline-3">
-<h3 id="orgheadline12"><span class="section-number-3">3.2</span> app</h3>
+<p>
+-c + worker<sub>number</sub>
+</p>
 </div>
 </div>
-<div id="outline-container-orgheadline15" class="outline-2">
-<h2 id="orgheadline15"><span class="section-number-2">4</span> Database</h2>
+<div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5"><span class="section-number-2">4</span> django celery 不执行　send due task</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-orgheadline14" class="outline-3">
-<h3 id="orgheadline14"><span class="section-number-3">4.1</span> mysql</h3>
-</div>
-</div>
-<div id="outline-container-orgheadline18" class="outline-2">
-<h2 id="orgheadline18"><span class="section-number-2">5</span> Algorithms</h2>
-<div class="outline-text-2" id="text-5">
-</div><div id="outline-container-orgheadline16" class="outline-3">
-<h3 id="orgheadline16"><span class="section-number-3">5.1</span> algorithms</h3>
-</div>
-<div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17"><span class="section-number-3">5.2</span> text book and  website</h3>
-</div>
-</div>
-<div id="outline-container-orgheadline21" class="outline-2">
-<h2 id="orgheadline21"><span class="section-number-2">6</span> Life</h2>
-<div class="outline-text-2" id="text-6">
-</div><div id="outline-container-orgheadline19" class="outline-3">
-<h3 id="orgheadline19"><span class="section-number-3">6.1</span> what worth fighting for</h3>
-</div>
-<div id="outline-container-orgheadline20" class="outline-3">
-<h3 id="orgheadline20"><span class="section-number-3">6.2</span> good youtube vedio</h3>
+<p>
+<a href="http://stackoverflow.com/questions/19997989/periodic-task-for-celery-sent-but-not-executed">SO Link</a>
+</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: mark</p>
-<p class="date">Created: 2016-10-21 Fri 18:56</p>
+<p class="date">Created: 2016-10-21 Fri 18:36</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

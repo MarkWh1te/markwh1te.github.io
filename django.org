@@ -4,8 +4,8 @@
 * Django ORM 
 ** queryset 
 *** django queryset是有缓存的
-    queryset是有缓存的，a = A.objects.all(),print [i for i in a].第一次执行打印会查询数据库，然后结果会被保存在queryset内置的cache中，再执行print的时候就会取自缓存。
-    很多时候会遇到仅需判断queryset是否为空的情况，可以1. if queryset:pass 2.if queryset.count>0:pass 3.if queryset.exists():pass. 三种方式性能依次提升。
+    queryset 是有缓存的，a = A.objects.all(),print [i for i in a].第一次执行打印会查询数据库，然后结果会被保存在queryset内置的cache中，再执行print的时候就会取自缓存。
+    很多时候会遇到仅需判断queryset 是否为空的情况，可以1. if queryset:pass 2.if queryset.count>0:pass 3.if queryset.exists():pass. 三种方式性能依次提升。
     当queryset非常巨大时，cache会成为问题。此时可以queryset.iterator()，迭代器的用处就不多说了，根据具体需求情况使用。
 *** [[http://blog.etianen.com/blog/2013/06/08/django-querysets/][django queryset is lazy]]
 *** 查看某个queryset背后的sql语句

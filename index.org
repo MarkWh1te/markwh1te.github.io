@@ -5,17 +5,19 @@
 * Python
 ** [[file:syntax.org][syntax]]
 ** [[file:django.org][django]]
-** flask 
-** celery
-** pip
-** good libiary
+** [[file:flasky.org][flasky]]
+** [[file:celery.org][celery]]
+** [[file:library.org][library]]
 * Emacs
 ** spacemacs
+   [[https://github.com/syl20bnr/spacemacs/tree/master/layers][view layers doc]]
 ** vim shortcut
 ** org mode
 * Linux 
 ** shell
 ** app
+* Database
+** mysql
 * Algorithms
 ** algorithms
 ** text book and  website

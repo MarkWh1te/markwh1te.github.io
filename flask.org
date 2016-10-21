@@ -1,0 +1,6 @@
+#+TITLE: MarkWhite Personal Wiki
+#+BIND: org-html-validation-link nil
+
+* Flasky
+[[https://github.com/miguelgrinberg/flasky][flasy on github]]
+
