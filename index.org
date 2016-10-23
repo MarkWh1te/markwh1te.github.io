@@ -24,4 +24,8 @@
 * Life
 ** what worth fighting for
 ** good youtube vedio
+* Scheme
+** list 
+*** (list a b) ==> (cons a b)所以一个二叉树的实现应该是(define a (list (list 1 2)(list 3 4))
+
 
