@@ -1,7 +1,6 @@
 #+TITLE: MarkWhite Personal Wiki
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
-#+BIND: org-html-validation-link nil
-#+OPTIONS: toc:nil        
+#+OPTIONS: toc:nil ^:nil 
 
 * Python
 ** [[file:syntax.org][syntax]]
@@ -16,12 +15,12 @@
 ** org mode
 * Linux 
 ** shell
-** app
+** app_config
 * Database
 ** mysql
 * Algorithms
 ** algorithms
-** text book and  website
+** text book and website
 * Life
 ** what worth fighting for
 ** good youtube vedio
@@ -30,3 +29,4 @@
 *** (list a b) ==> (cons a b)所以一个二叉树的实现应该(define a (list (list 1 2)(list 3 4))
 
 
+  

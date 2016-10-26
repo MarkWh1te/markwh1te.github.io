@@ -1,4 +1,3 @@
-#+BIND: org-export-html-validation-link nil
 #+TITLE: Python syntax
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 * Decorater
