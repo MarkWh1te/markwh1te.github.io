@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-19 Wed 19:39 -->
+<!-- 2016-10-26 Wed 17:37 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Python syntax</title>
@@ -94,6 +94,7 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -241,17 +242,17 @@ for the JavaScript code in this tag.
 </p>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">class</span> <span style="color: #b58900;">Singleton</span><span style="color: #2aa198;">(</span><span style="color: #839496; font-weight: bold;">object</span><span style="color: #2aa198;">)</span>:
-    <span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">__new__</span> <span style="color: #2aa198;">(</span>cls<span style="color: #2aa198;">)</span>:
-        <span style="color: #859900; font-weight: bold;">if</span> cls.cer:
-            <span style="color: #268bd2;">cls.cer</span> = <span style="color: #268bd2; font-weight: bold;">False</span>
-        <span style="color: #859900; font-weight: bold;">return</span> <span style="color: #839496; font-weight: bold;">super</span><span style="color: #2aa198;">()</span>.__new__<span style="color: #2aa198;">(</span>cls<span style="color: #2aa198;">)</span>
-        <span style="color: #859900; font-weight: bold;">else</span>:<span style="color: #859900; font-weight: bold;">raise</span> <span style="color: #b58900;">TypeError</span><span style="color: #2aa198;">(</span><span style="color: #2aa198;">'[%s] could be instantiated only once!'</span>%cls. name <span style="color: #2aa198;">)</span>
+<pre class="src src-python"><span style="color: #268bd2; font-weight: bold;">class</span> <span style="color: #af005f; font-weight: bold;">Singleton</span><span style="color: #268bd2;">(</span><span style="color: #268bd2;">object</span><span style="color: #268bd2;">)</span>:
+    <span style="color: #268bd2; font-weight: bold;">def</span> <span style="color: #8700af; font-weight: bold;">__new__</span> <span style="color: #268bd2;">(</span>cls<span style="color: #268bd2;">)</span>:
+        <span style="color: #268bd2; font-weight: bold;">if</span> cls.cer:
+            <span style="color: #af5fd7;">cls.cer</span> = <span style="color: #8700af;">False</span>
+        <span style="color: #268bd2; font-weight: bold;">return</span> <span style="color: #268bd2;">super</span><span style="color: #268bd2;">()</span>.__new__<span style="color: #268bd2;">(</span>cls<span style="color: #268bd2;">)</span>
+        <span style="color: #268bd2; font-weight: bold;">else</span>:<span style="color: #268bd2; font-weight: bold;">raise</span> <span style="color: #af005f; font-weight: bold;">TypeError</span><span style="color: #268bd2;">(</span><span style="color: #2aa198;">'[%s] could be instantiated only once!'</span>%cls. name <span style="color: #268bd2;">)</span>
 
-        <span style="color: #268bd2;">cer</span> = <span style="color: #268bd2; font-weight: bold;">True</span>
+        <span style="color: #af5fd7;">cer</span> = <span style="color: #8700af;">True</span>
 
-   <span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">__del__</span> <span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">self</span><span style="color: #2aa198;">)</span>:
-        <span style="color: #859900; font-weight: bold;">self</span>.<span style="color: #859900; font-weight: bold;">class</span>.cer = <span style="color: #268bd2; font-weight: bold;">True</span>
+   <span style="color: #268bd2; font-weight: bold;">def</span> <span style="color: #8700af; font-weight: bold;">__del__</span> <span style="color: #268bd2;">(</span><span style="color: #268bd2; font-weight: bold;">self</span><span style="color: #268bd2;">)</span>:
+        <span style="color: #268bd2; font-weight: bold;">self</span>.<span style="color: #268bd2; font-weight: bold;">class</span>.cer = <span style="color: #8700af;">True</span>
 </pre>
 </div>
 <p>
@@ -338,13 +339,13 @@ super(type, type2) -&gt; bound super object; requires issubclass(type2, type)
 </p>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">class</span> <span style="color: #b58900;">P</span><span style="color: #2aa198;">(</span><span style="color: #839496; font-weight: bold;">object</span><span style="color: #2aa198;">)</span>:
-    <span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">__init__</span><span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">self</span><span style="color: #2aa198;">)</span>:
-        <span style="color: #859900; font-weight: bold;">print</span><span style="color: #2aa198;">(</span><span style="color: #2aa198;">'calling  init  of P'</span><span style="color: #2aa198;">)</span>
+<pre class="src src-python"><span style="color: #268bd2; font-weight: bold;">class</span> <span style="color: #af005f; font-weight: bold;">P</span><span style="color: #268bd2;">(</span><span style="color: #268bd2;">object</span><span style="color: #268bd2;">)</span>:
+    <span style="color: #268bd2; font-weight: bold;">def</span> <span style="color: #8700af; font-weight: bold;">__init__</span><span style="color: #268bd2;">(</span><span style="color: #268bd2; font-weight: bold;">self</span><span style="color: #268bd2;">)</span>:
+        <span style="color: #268bd2; font-weight: bold;">print</span><span style="color: #268bd2;">(</span><span style="color: #2aa198;">'calling  init  of P'</span><span style="color: #268bd2;">)</span>
 
-<span style="color: #859900; font-weight: bold;">class</span> <span style="color: #b58900;">C</span><span style="color: #2aa198;">(</span>P<span style="color: #2aa198;">)</span>:
-    <span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">__init__</span><span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">self</span><span style="color: #2aa198;">)</span>:
-        <span style="color: #859900; font-weight: bold;">return</span> <span style="color: #839496; font-weight: bold;">super</span><span style="color: #2aa198;">(</span>C,<span style="color: #859900; font-weight: bold;">self</span><span style="color: #2aa198;">)</span>.__init__<span style="color: #2aa198;">()</span>
+<span style="color: #268bd2; font-weight: bold;">class</span> <span style="color: #af005f; font-weight: bold;">C</span><span style="color: #268bd2;">(</span>P<span style="color: #268bd2;">)</span>:
+    <span style="color: #268bd2; font-weight: bold;">def</span> <span style="color: #8700af; font-weight: bold;">__init__</span><span style="color: #268bd2;">(</span><span style="color: #268bd2; font-weight: bold;">self</span><span style="color: #268bd2;">)</span>:
+        <span style="color: #268bd2; font-weight: bold;">return</span> <span style="color: #268bd2;">super</span><span style="color: #268bd2;">(</span>C,<span style="color: #268bd2; font-weight: bold;">self</span><span style="color: #268bd2;">)</span>.__init__<span style="color: #268bd2;">()</span>
 </pre>
 </div>
 <p>
@@ -380,7 +381,7 @@ super(type) -&gt; unbound super object
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: mark</p>
-<p class="date">Created: 2016-10-19 Wed 19:39</p>
+<p class="date">Created: 2016-10-26 Wed 17:37</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

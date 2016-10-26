@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-20 Thu 20:04 -->
+<!-- 2016-10-26 Wed 17:38 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>django</title>
@@ -94,6 +94,7 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -182,8 +183,8 @@ for the JavaScript code in this tag.
 <h4 id="orgheadline1"><span class="section-number-4">1.1.1</span> django queryset是有缓存的</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
-queryset是有缓存的，a = A.objects.all(),print [i for i in a].第一次执行打印会查询数据库，然后结果会被保存在queryset内置的cache中，再执行print的时候就会取自缓存。
-很多时候会遇到仅需判断queryset是否为空的情况，可以1. if queryset:pass 2.if queryset.count&gt;0:pass 3.if queryset.exists():pass. 三种方式性能依次提升。
+queryset 是有缓存的，a = A.objects.all(),print [i for i in a].第一次执行打印会查询数据库，然后结果会被保存在queryset内置的cache中，再执行print的时候就会取自缓存。
+很多时候会遇到仅需判断queryset 是否为空的情况，可以1. if queryset:pass 2.if queryset.count&gt;0:pass 3.if queryset.exists():pass. 三种方式性能依次提升。
 当queryset非常巨大时，cache会成为问题。此时可以queryset.iterator()，迭代器的用处就不多说了，根据具体需求情况使用。
 </p>
 </div>
@@ -207,7 +208,7 @@ queryset.first() and queryset.last()
 </p>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">p</span> = Article.objects.order_by<span style="color: #2aa198;">(</span><span style="color: #2aa198;">'title'</span>, <span style="color: #2aa198;">'pub_date'</span><span style="color: #2aa198;">)</span>.first<span style="color: #2aa198;">()</span>
+<pre class="src src-python"><span style="color: #af5fd7;">p</span> = Article.objects.order_by<span style="color: #268bd2;">(</span><span style="color: #2aa198;">'title'</span>, <span style="color: #2aa198;">'pub_date'</span><span style="color: #268bd2;">)</span>.first<span style="color: #268bd2;">()</span>
 </pre>
 </div>
 <p>
@@ -215,10 +216,10 @@ queryset.first() and queryset.last()
 </p>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">try</span>:
-    <span style="color: #268bd2;">p</span> = Article.objects.order_by<span style="color: #2aa198;">(</span><span style="color: #2aa198;">'title'</span>, <span style="color: #2aa198;">'pub_date'</span><span style="color: #2aa198;">)[</span><span style="color: #6c71c4;">0</span><span style="color: #2aa198;">]</span>
-<span style="color: #859900; font-weight: bold;">except</span> <span style="color: #b58900;">IndexError</span>:
-    <span style="color: #268bd2;">p</span> = <span style="color: #268bd2; font-weight: bold;">None</span>
+<pre class="src src-python"><span style="color: #268bd2; font-weight: bold;">try</span>:
+    <span style="color: #af5fd7;">p</span> = Article.objects.order_by<span style="color: #268bd2;">(</span><span style="color: #2aa198;">'title'</span>, <span style="color: #2aa198;">'pub_date'</span><span style="color: #268bd2;">)[</span><span style="color: #8700af;">0</span><span style="color: #268bd2;">]</span>
+<span style="color: #268bd2; font-weight: bold;">except</span> <span style="color: #af005f; font-weight: bold;">IndexError</span>:
+    <span style="color: #af5fd7;">p</span> = <span style="color: #8700af;">None</span>
 </pre>
 </div>
 </div>
@@ -345,7 +346,7 @@ make sure that the schema of models is same as schema of tables in database.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: mark</p>
-<p class="date">Created: 2016-10-20 Thu 20:04</p>
+<p class="date">Created: 2016-10-26 Wed 17:38</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

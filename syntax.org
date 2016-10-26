@@ -1,5 +1,6 @@
 #+BIND: org-export-html-validation-link nil
 #+TITLE: Python syntax
+#+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 * Decorater
 ** stack overflow
    [[http://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators-in-python][what is decorators]]

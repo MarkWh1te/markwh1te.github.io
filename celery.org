@@ -1,4 +1,5 @@
-#+TITLE: MarkWhite Personal Wiki
+#+TITLE: celery
+#+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+BIND: org-html-validation-link nil
 
 * Don't pass model objects to tasks
