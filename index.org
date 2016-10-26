@@ -1,4 +1,5 @@
 #+TITLE: MarkWhite Personal Wiki
+#+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+BIND: org-html-validation-link nil
 #+OPTIONS: toc:nil        
 
@@ -26,6 +27,6 @@
 ** good youtube vedio
 * Scheme
 ** list 
-*** (list a b) ==> (cons a b)所以一个二叉树的实现应该是(define a (list (list 1 2)(list 3 4))
+*** (list a b) ==> (cons a b)所以一个二叉树的实现应该(define a (list (list 1 2)(list 3 4))
 
 
