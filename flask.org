@@ -1,7 +1,6 @@
 #+TITLE: Flask
-#+BIND: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
-
+#+OPTIONS: toc:nil ^:nil 
 * Flasky
 [[https://github.com/miguelgrinberg/flasky][flasy on github]]
 

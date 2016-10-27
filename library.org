@@ -1,6 +1,6 @@
 #+TITLE: Python good library
-#+BIND: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
+#+OPTIONS: toc:nil ^:nil 
 
 * Socket
 ** [[http://www.tutorialspoint.com/python/python_networking.htm][socket turtorial]]

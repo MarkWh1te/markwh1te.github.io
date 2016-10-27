@@ -1,6 +1,6 @@
 #+TITLE: celery
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
-#+BIND: org-html-validation-link nil
+#+OPTIONS: toc:nil ^:nil 
 
 * Don't pass model objects to tasks
 ** Since tasks don't run immediately, by the time a task runs and looks at a model object that was passed to it, the corresponding record in the database might have changed. If the task then does something to the model object and saves it, those changes in the database are overwritten by older data.
