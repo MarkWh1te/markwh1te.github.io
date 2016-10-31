@@ -4,4 +4,4 @@
 
 
 * Xmonard 
-
+[[http://www.linuxdiyf.com/linux/22120.html][ubuntu install guide]]
