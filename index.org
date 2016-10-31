@@ -15,9 +15,9 @@
 ** org mode
 * Linux 
 ** shell
-** app_config
+** [[file:app_config.org][app_config]]
 * Database
-** mysql
+** [[file:mysql.org][mysql]]
 * Algorithms
 ** algorithms
 ** text book and website
