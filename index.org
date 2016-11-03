@@ -10,7 +10,8 @@
 ** [[file:library.org][library]]
 * Emacs
 ** spacemacs
-   [[https://github.com/syl20bnr/spacemacs/tree/master/layers][view layers doc]]
+*** [[https://github.com/syl20bnr/spacemacs/tree/master/layers][view layers doc]]
+*** [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Btags][tags]]
 ** vim shortcut
 ** org mode
 * Linux 
