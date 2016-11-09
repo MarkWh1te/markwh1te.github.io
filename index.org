@@ -10,7 +10,8 @@
 ** [[file:library.org][library]]
 * Emacs
 ** spacemacs
-   [[https://github.com/syl20bnr/spacemacs/tree/master/layers][view layers doc]]
+*** [[https://github.com/syl20bnr/spacemacs/tree/master/layers][view layers doc]]
+*** [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Btags][tags]]
 ** vim shortcut
 ** org mode
 * Linux 
@@ -27,10 +28,12 @@
 * Scheme
 ** list 
 *** (list a b) ==> (cons a b)所以一个二叉树的实现应该(define a (list (list 1 2)(list 3 4))
+<<<<<<< HEAD
+* Math
+** [[https://en.wikipedia.org/wiki/Horner%27s_method][horner's rule]]
+   說白了就是瘋狂對 x 提取公因子
 * resume
 ** [[file:resume.org][resume]]
 
   
-
-
-  
+=======
