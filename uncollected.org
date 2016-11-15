@@ -1,0 +1,6 @@
+#+TITLE: uncollected things
+#+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
+
+[[https://doomzhou.github.io/coder/2015/03/09/Python-Requests-socks-proxy.html][proxy pip]]
+
+

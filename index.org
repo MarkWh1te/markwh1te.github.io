@@ -37,4 +37,5 @@
    說白了就是瘋狂對 x 提取公因子
 * resume
 ** [[file:resume.org][resume]]
-
+* uncollected
+** [[file:uncollected.org][uncollected]]
