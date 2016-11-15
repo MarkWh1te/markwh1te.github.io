@@ -22,8 +22,8 @@
 ** [[file:mongodb.org][mongoDB]]
 * Internet
 ** proxychains
-   [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
-   [[https://github.com/rofl0r/proxychains-ng][git]]
+**** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
+**** [[https://github.com/rofl0r/proxychains-ng][git]]
 * Algorithms
 ** algorithms
 ** text book and website
