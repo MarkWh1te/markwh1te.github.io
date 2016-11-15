@@ -29,6 +29,7 @@
 ** text book and website
 * AI
 ** [[file:npl.org][npl]]
+** [[file:tensorflow.org][tensorflow]]
 * Life
 ** what worth fighting for
 ** good youtube vedio

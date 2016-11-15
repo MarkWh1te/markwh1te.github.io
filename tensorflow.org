@@ -1,0 +1,9 @@
+#+TITLE: tensorflow
+#+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
+
+* Turtorials
+** [[https://github.com/jtoy/awesome-tensorflow][awesome-tensorflow]]
+** [[https://www.tensorflow.org/versions/r0.7/tutorials/index.html][offcial-turtorial]]
+
+
+
