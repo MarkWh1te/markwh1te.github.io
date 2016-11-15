@@ -27,6 +27,8 @@
 * Algorithms
 ** algorithms
 ** text book and website
+* AI
+** [[file:npl.org][npl]]
 * Life
 ** what worth fighting for
 ** good youtube vedio
