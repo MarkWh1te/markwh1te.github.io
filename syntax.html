@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-26 Wed 19:20 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2016-11-15 Tue 22:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Python syntax</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="mark" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="mark-linux" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,13 +53,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -92,6 +176,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
@@ -171,34 +256,35 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline3">1. Decorater</a>
+<li><a href="#org350390f">1. Decorater</a>
 <ul>
-<li><a href="#orgheadline1">1.1. stack overflow</a></li>
-<li><a href="#orgheadline2">1.2. @classmethod and @staticmethod</a></li>
+<li><a href="#orgff63cde">1.1. stack overflow</a></li>
+<li><a href="#org51471b0">1.2. @classmethod and @staticmethod</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline6">2. Super</a>
+<li><a href="#orgcf86834">2. Super</a>
 <ul>
-<li><a href="#orgheadline4">2.1. Raymond Hettinger 's paper</a></li>
-<li><a href="#orgheadline5">2.2. Super() ," object. new ()" and "object. del ()"</a></li>
+<li><a href="#org349454a">2.1. Raymond Hettinger 's paper</a></li>
+<li><a href="#orga04c7bf">2.2. Super() ," object. new ()" and "object. del ()"</a></li>
 </ul>
 </li>
+<li><a href="#org9415433">3. _<sub>enter</sub>__, <span class="underline"><span class="underline">exit</span></span> and with statement</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">1</span> Decorater</h2>
+<div id="outline-container-org350390f" class="outline-2">
+<h2 id="org350390f"><span class="section-number-2">1</span> Decorater</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgheadline1" class="outline-3">
-<h3 id="orgheadline1"><span class="section-number-3">1.1</span> stack overflow</h3>
+</div><div id="outline-container-orgff63cde" class="outline-3">
+<h3 id="orgff63cde"><span class="section-number-3">1.1</span> stack overflow</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <a href="http://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators-in-python">what is decorators</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2"><span class="section-number-3">1.2</span> @classmethod and @staticmethod</h3>
+<div id="outline-container-org51471b0" class="outline-3">
+<h3 id="org51471b0"><span class="section-number-3">1.2</span> @classmethod and @staticmethod</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 <a href="http://stackoverflow.com/questions/12179271/python-classmethod-and-staticmethod-for-beginner">staticmethod and classmethod on SO</a>
@@ -206,19 +292,19 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6"><span class="section-number-2">2</span> Super</h2>
+<div id="outline-container-orgcf86834" class="outline-2">
+<h2 id="orgcf86834"><span class="section-number-2">2</span> Super</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-orgheadline4" class="outline-3">
-<h3 id="orgheadline4"><span class="section-number-3">2.1</span> Raymond Hettinger 's paper</h3>
+</div><div id="outline-container-org349454a" class="outline-3">
+<h3 id="org349454a"><span class="section-number-3">2.1</span> Raymond Hettinger 's paper</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <a href="https://rhettinger.wordpress.com/2011/05/26/super-considered-super/">super considered super</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5"><span class="section-number-3">2.2</span> Super() ," object. new ()" and "object. del ()"</h3>
+<div id="outline-container-orga04c7bf" class="outline-3">
+<h3 id="orga04c7bf"><span class="section-number-3">2.2</span> Super() ," object. new ()" and "object. del ()"</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 "object. new ()"
@@ -241,7 +327,6 @@ for the JavaScript code in this tag.
 这里拿出  new () 来说主要是昨晚看到一道题，说是如何用 Python 实现单例模式，就是某个类同时只允许存在一个实例的意思。比较直接的想法应该是在类属性里添加一个布尔开关（比如就叫 cer 好了），创建实例时检查 cer 的值，True 就允许创建，False 就引发异常。那么这个检查的过程如果安装在  init () 里肯定是不行的，因为那时实例已经被创建出来了，所以正确的检查位置应该是  new () 里面。第二点，cer 这个开关还应该在第一个实例被删除时自动打回到 True 上，所以还需要覆盖  del () 方法：
 </p>
 <div class="org-src-container">
-
 <pre class="src src-python"><span style="color: #268bd2; font-weight: bold;">class</span> <span style="color: #af005f; font-weight: bold;">Singleton</span><span style="color: #268bd2;">(</span><span style="color: #268bd2;">object</span><span style="color: #268bd2;">)</span>:
     <span style="color: #268bd2; font-weight: bold;">def</span> <span style="color: #8700af; font-weight: bold;">__new__</span> <span style="color: #268bd2;">(</span>cls<span style="color: #268bd2;">)</span>:
         <span style="color: #268bd2; font-weight: bold;">if</span> cls.cer:
@@ -338,7 +423,6 @@ super(type, type2) -&gt; bound super object; requires issubclass(type2, type)
 比如：
 </p>
 <div class="org-src-container">
-
 <pre class="src src-python"><span style="color: #268bd2; font-weight: bold;">class</span> <span style="color: #af005f; font-weight: bold;">P</span><span style="color: #268bd2;">(</span><span style="color: #268bd2;">object</span><span style="color: #268bd2;">)</span>:
     <span style="color: #268bd2; font-weight: bold;">def</span> <span style="color: #8700af; font-weight: bold;">__init__</span><span style="color: #268bd2;">(</span><span style="color: #268bd2; font-weight: bold;">self</span><span style="color: #268bd2;">)</span>:
         <span style="color: #268bd2; font-weight: bold;">print</span><span style="color: #268bd2;">(</span><span style="color: #2aa198;">'calling  init  of P'</span><span style="color: #268bd2;">)</span>
@@ -378,11 +462,54 @@ super(type) -&gt; unbound super object
 </div>
 </div>
 </div>
+
+<div id="outline-container-org9415433" class="outline-2">
+<h2 id="org9415433"><span class="section-number-2">3</span> _<sub>enter</sub>__, <span class="underline"><span class="underline">exit</span></span> and with statement</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Using these magic methods (<span class="underline"><span class="underline">enter</span></span>, <span class="underline"><span class="underline">exit</span></span>) allows you to implement objects which can be used easily with the with statement.
+</p>
+
+<p>
+The idea is that it makes it easy to build code which needs some 'cleandown' code executed (think of it as a try-finally block). Some more explanation here.
+</p>
+
+<p>
+A useful example could be a database connection object (which then automagically closes the connection once the corresponding 'with'-statement goes out of scope):
+</p>
+
+<p>
+class DatabaseConnection(object):
+</p>
+
+<p>
+def _<sub>enter</sub>_<sub>(self)</sub>:
+</p>
+
+<p>
+&#x2026;
+return self.dbconn
+</p>
+
+<p>
+def _<sub>exit</sub>_<sub>(self, exc<sub>type</sub>, exc<sub>val</sub>, exc<sub>tb</sub>)</sub>:
+</p>
+
+<p>
+self.dbconn.close()
+&#x2026;
+As explained above, use this object with the with statement (you may need to do from <span class="underline"><span class="underline">future</span></span> import with<sub>statement</sub> at the top of the file if you're on Python 2.5).
+</p>
+
+<p>
+with DatabaseConnection() as mydbconn:
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: mark (<a href="mailto:mark@markde-MacBook-Pro.local">mark@markde-MacBook-Pro.local</a>)</p>
-<p class="date">Date: </p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.3.6)</p>
+<p class="author">Author: mark-linux</p>
+<p class="date">Created: 2016-11-15 Tue 22:50</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
