@@ -1,5 +1,6 @@
 #+TITLE: Python syntax
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
+#+OPTIONS:  ^:nil 
 * Decorater
 ** stack overflow
    [[http://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators-in-python][what is decorators]]
@@ -122,6 +123,7 @@ class Singleton(object):
    最后要说的是调用父类方法时的语句，可以看到上面的两个例子不管父类方法有没有返回值（ new  或  init ），都使用 return 来调用。这样的好处在于不用去关心该方法到底有没有返回值，就算没有，return expression 的 expression 也一样会被执行，然后 return 一个 None，这显然没什么坏处。
 
 * __enter__, __exit__ and with statement 
+  [http://stackoverflow.com/questions/1984325/explaining-pythons-enter-and-exit][SO]
   Using these magic methods (__enter__, __exit__) allows you to implement objects which can be used easily with the with statement.
 
 The idea is that it makes it easy to build code which needs some 'cleandown' code executed (think of it as a try-finally block). Some more explanation here.

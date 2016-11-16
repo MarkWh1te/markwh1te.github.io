@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-11-15 Tue 22:50 -->
+<!-- 2016-11-15 Tue 23:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Python syntax</title>
@@ -256,35 +256,35 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org350390f">1. Decorater</a>
+<li><a href="#org2b6b2fc">1. Decorater</a>
 <ul>
-<li><a href="#orgff63cde">1.1. stack overflow</a></li>
-<li><a href="#org51471b0">1.2. @classmethod and @staticmethod</a></li>
+<li><a href="#orgd61af59">1.1. stack overflow</a></li>
+<li><a href="#orgaf4d442">1.2. @classmethod and @staticmethod</a></li>
 </ul>
 </li>
-<li><a href="#orgcf86834">2. Super</a>
+<li><a href="#org1363a7b">2. Super</a>
 <ul>
-<li><a href="#org349454a">2.1. Raymond Hettinger 's paper</a></li>
-<li><a href="#orga04c7bf">2.2. Super() ," object. new ()" and "object. del ()"</a></li>
+<li><a href="#orgcf579e5">2.1. Raymond Hettinger 's paper</a></li>
+<li><a href="#orgef14246">2.2. Super() ," object. new ()" and "object. del ()"</a></li>
 </ul>
 </li>
-<li><a href="#org9415433">3. _<sub>enter</sub>__, <span class="underline"><span class="underline">exit</span></span> and with statement</a></li>
+<li><a href="#org71e2b9b">3. __enter__, <span class="underline"><span class="underline">exit</span></span> and with statement</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org350390f" class="outline-2">
-<h2 id="org350390f"><span class="section-number-2">1</span> Decorater</h2>
+<div id="outline-container-org2b6b2fc" class="outline-2">
+<h2 id="org2b6b2fc"><span class="section-number-2">1</span> Decorater</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgff63cde" class="outline-3">
-<h3 id="orgff63cde"><span class="section-number-3">1.1</span> stack overflow</h3>
+</div><div id="outline-container-orgd61af59" class="outline-3">
+<h3 id="orgd61af59"><span class="section-number-3">1.1</span> stack overflow</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <a href="http://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators-in-python">what is decorators</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org51471b0" class="outline-3">
-<h3 id="org51471b0"><span class="section-number-3">1.2</span> @classmethod and @staticmethod</h3>
+<div id="outline-container-orgaf4d442" class="outline-3">
+<h3 id="orgaf4d442"><span class="section-number-3">1.2</span> @classmethod and @staticmethod</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 <a href="http://stackoverflow.com/questions/12179271/python-classmethod-and-staticmethod-for-beginner">staticmethod and classmethod on SO</a>
@@ -292,19 +292,19 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgcf86834" class="outline-2">
-<h2 id="orgcf86834"><span class="section-number-2">2</span> Super</h2>
+<div id="outline-container-org1363a7b" class="outline-2">
+<h2 id="org1363a7b"><span class="section-number-2">2</span> Super</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org349454a" class="outline-3">
-<h3 id="org349454a"><span class="section-number-3">2.1</span> Raymond Hettinger 's paper</h3>
+</div><div id="outline-container-orgcf579e5" class="outline-3">
+<h3 id="orgcf579e5"><span class="section-number-3">2.1</span> Raymond Hettinger 's paper</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <a href="https://rhettinger.wordpress.com/2011/05/26/super-considered-super/">super considered super</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orga04c7bf" class="outline-3">
-<h3 id="orga04c7bf"><span class="section-number-3">2.2</span> Super() ," object. new ()" and "object. del ()"</h3>
+<div id="outline-container-orgef14246" class="outline-3">
+<h3 id="orgef14246"><span class="section-number-3">2.2</span> Super() ," object. new ()" and "object. del ()"</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 "object. new ()"
@@ -463,10 +463,11 @@ super(type) -&gt; unbound super object
 </div>
 </div>
 
-<div id="outline-container-org9415433" class="outline-2">
-<h2 id="org9415433"><span class="section-number-2">3</span> _<sub>enter</sub>__, <span class="underline"><span class="underline">exit</span></span> and with statement</h2>
+<div id="outline-container-org71e2b9b" class="outline-2">
+<h2 id="org71e2b9b"><span class="section-number-2">3</span> __enter__, <span class="underline"><span class="underline">exit</span></span> and with statement</h2>
 <div class="outline-text-2" id="text-3">
 <p>
+[<a href="http://stackoverflow.com/questions/1984325/explaining-pythons-enter-and-exit%5D%5BSO">http://stackoverflow.com/questions/1984325/explaining-pythons-enter-and-exit][SO</a>]
 Using these magic methods (<span class="underline"><span class="underline">enter</span></span>, <span class="underline"><span class="underline">exit</span></span>) allows you to implement objects which can be used easily with the with statement.
 </p>
 
@@ -483,7 +484,7 @@ class DatabaseConnection(object):
 </p>
 
 <p>
-def _<sub>enter</sub>_<sub>(self)</sub>:
+def __enter__(self):
 </p>
 
 <p>
@@ -492,13 +493,13 @@ return self.dbconn
 </p>
 
 <p>
-def _<sub>exit</sub>_<sub>(self, exc<sub>type</sub>, exc<sub>val</sub>, exc<sub>tb</sub>)</sub>:
+def __exit__(self, exc_type, exc_val, exc_tb):
 </p>
 
 <p>
 self.dbconn.close()
 &#x2026;
-As explained above, use this object with the with statement (you may need to do from <span class="underline"><span class="underline">future</span></span> import with<sub>statement</sub> at the top of the file if you're on Python 2.5).
+As explained above, use this object with the with statement (you may need to do from <span class="underline"><span class="underline">future</span></span> import with_statement at the top of the file if you're on Python 2.5).
 </p>
 
 <p>
@@ -509,7 +510,7 @@ with DatabaseConnection() as mydbconn:
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: mark-linux</p>
-<p class="date">Created: 2016-11-15 Tue 22:50</p>
+<p class="date">Created: 2016-11-15 Tue 23:09</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
