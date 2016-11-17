@@ -1,9 +1,10 @@
 #+TITLE: Python good library
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
-#+OPTIONS: toc:nil ^:nil 
+#+OPTIONS: ^:nil 
 
 * Socket
 ** [[http://www.tutorialspoint.com/python/python_networking.htm][socket turtorial]]
+   [[https://docs.python.org/2.7/howto/sockets.html][doc python turtorial]]
 * coroutine
 ** [[https://github.com/gevent/gevent][gevent]]
 *** Fast event loop based on libev (epoll on Linux, kqueue on FreeBSD).

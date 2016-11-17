@@ -17,10 +17,12 @@
 * Linux 
 ** shell
 ** [[file:app_config.org][app_config]]
+** [[http://stackoverflow.com/questions/5656530/how-to-use-shared-memory-with-linux-in-c][memory]]
 * Database
 ** [[file:mysql.org][mysql]]
 ** [[file:mongodb.org][mongoDB]]
 * Internet
+** [[https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6][File descriptor]]
 ** proxychains
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
 **** [[https://github.com/rofl0r/proxychains-ng][git]]

@@ -5,4 +5,7 @@
 * File Sharing
   [[http://packages.ubuntu.com/precise/net/nfs-common][nfs-common]]
 * Xmonard 
-[[http://www.linuxdiyf.com/linux/22120.html][ubuntu install guide]]
+  [[http://www.linuxdiyf.com/linux/22120.html][ubuntu install guide]]
+* VMware shortcut
+  alt + ctrl : get out of virtual machine
+  alt + g : focus on virtual machine
