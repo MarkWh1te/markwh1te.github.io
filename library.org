@@ -5,6 +5,7 @@
 * Socket
 ** [[http://www.tutorialspoint.com/python/python_networking.htm][socket turtorial]]
    [[https://docs.python.org/2.7/howto/sockets.html][doc python turtorial]]
+   [[http://steelkiwi.com/blog/working-tcp-sockets/][a more complex turtorial]]
 * coroutine
 ** [[https://github.com/gevent/gevent][gevent]]
 *** Fast event loop based on libev (epoll on Linux, kqueue on FreeBSD).
