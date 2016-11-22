@@ -10,4 +10,7 @@
 ** [[https://github.com/gevent/gevent][gevent]]
 *** Fast event loop based on libev (epoll on Linux, kqueue on FreeBSD).
 
+* search engine 
+  whoosh
+
 
