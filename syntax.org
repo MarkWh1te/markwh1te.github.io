@@ -1,6 +1,9 @@
 #+TITLE: Python syntax
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+OPTIONS:  ^:nil 
+
+* 参数传递
+  对于变量（与对象相对的概念），其实，python 函数参数传递可以理解为就是变量传值操作，用 C++的方式理解，就是对 void*赋值。如果这个变量的值不变，我们看似就是引用，如果这个变量的值改变，我们看着像是在赋值。
 * Decorater
 ** stack overflow
    [[http://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators-in-python][what is decorators]]
@@ -11,7 +14,7 @@
    [[https://rhettinger.wordpress.com/2011/05/26/super-considered-super/][super considered super]]
 ** Super() ," object. new ()" and "object. del ()"
    "object. new ()"
-   自定义 " new ()" 方法一般并不常用，而且容易与  init () 相混淆。实际上这两个方法也确实相似，比如他们都是在创建类的实例时会被默认调用的方法，而且创建实例时传入的参数也都会传到这两个方法里。但他们也有很重要的区别，比如对  new () 的调用比  init () 要早， new () 有返回值， init () 木有。
+   自定义 " new ()" 方法一般并不常用，而且容易与  init () 相混淆。实际上这两个方法也确实相似，比如他们都是在创建类的实例时会被默认调用的方法，而且创建实例时传入的参数也都会传到这两个方法里。但他们也有很重要的区别，比如对  new () 的调用比  init () 要早，new () 有返回值，init () 木有。
 
    来理一下创建类的实例的过程，即解释器处理 foo = MyClass() 这条语句的步骤的话，大约是这样的（可能并不完全准确）：
 
@@ -19,7 +22,7 @@
    调用 MyClass 类的  new () 静态方法，返回一个类实例
    将 new () 返回的类实例赋值给 foo
    这个实例被当做 self 参数传给  init ()，以完成该实例的初始化工作
-   即，真正完成构造实例工作的是  new () 方法，调用它需要一个默认参数 cls，就是将要返回的这个实例所属的类（MyClass）。一般情况下因为  new () 极少被覆盖，最终调用的都是 object. new ()。这个时候我们的实例已经被创建了，就可以当做 self 参数传给  init () 了， init () 做的工作其实仅是初始化一些属性值之类的，与严格意义下的“构造”实例无关。
+   即，真正完成构造实例工作的是  new () 方法，调用它需要一个默认参数 cls，就是将要返回的这个实例所属的类（MyClass）。一般情况下因为  new () 极少被覆盖，最终调用的都是 object. new ()。这个时候我们的实例已经被创建了，就可以当做 self 参数传给  init () 了，init () 做的工作其实仅是初始化一些属性值之类的，与严格意义下的“构造”实例无关。
 
    这里拿出  new () 来说主要是昨晚看到一道题，说是如何用 Python 实现单例模式，就是某个类同时只允许存在一个实例的意思。比较直接的想法应该是在类属性里添加一个布尔开关（比如就叫 cer 好了），创建实例时检查 cer 的值，True 就允许创建，False 就引发异常。那么这个检查的过程如果安装在  init () 里肯定是不行的，因为那时实例已经被创建出来了，所以正确的检查位置应该是  new () 里面。第二点，cer 这个开关还应该在第一个实例被删除时自动打回到 True 上，所以还需要覆盖  del () 方法：
 #+BEGIN_SRC python
@@ -120,7 +123,7 @@ class Singleton(object):
 
    super(type) -> unbound super object
 
-   最后要说的是调用父类方法时的语句，可以看到上面的两个例子不管父类方法有没有返回值（ new  或  init ），都使用 return 来调用。这样的好处在于不用去关心该方法到底有没有返回值，就算没有，return expression 的 expression 也一样会被执行，然后 return 一个 None，这显然没什么坏处。
+   最后要说的是调用父类方法时的语句，可以看到上面的两个例子不管父类方法有没有返回值（new  或  init），都使用 return 来调用。这样的好处在于不用去关心该方法到底有没有返回值，就算没有，return expression 的 expression 也一样会被执行，然后 return 一个 None，这显然没什么坏处。
 
 * __enter__, __exit__ and with statement 
   [http://stackoverflow.com/questions/1984325/explaining-pythons-enter-and-exit][SO]

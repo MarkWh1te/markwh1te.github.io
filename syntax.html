@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-11-15 Tue 23:09 -->
+<!-- 2016-11-24 Thu 17:44 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Python syntax</title>
@@ -256,59 +256,69 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2b6b2fc">1. Decorater</a>
+<li><a href="#org3a3de08">1. 参数传递</a></li>
+<li><a href="#org3d501e9">2. Decorater</a>
 <ul>
-<li><a href="#orgd61af59">1.1. stack overflow</a></li>
-<li><a href="#orgaf4d442">1.2. @classmethod and @staticmethod</a></li>
+<li><a href="#orgb8f4b34">2.1. stack overflow</a></li>
+<li><a href="#orgce599ec">2.2. @classmethod and @staticmethod</a></li>
 </ul>
 </li>
-<li><a href="#org1363a7b">2. Super</a>
+<li><a href="#org1128028">3. Super</a>
 <ul>
-<li><a href="#orgcf579e5">2.1. Raymond Hettinger 's paper</a></li>
-<li><a href="#orgef14246">2.2. Super() ," object. new ()" and "object. del ()"</a></li>
+<li><a href="#orga6aa228">3.1. Raymond Hettinger 's paper</a></li>
+<li><a href="#orgfa580f0">3.2. Super() ," object. new ()" and "object. del ()"</a></li>
 </ul>
 </li>
-<li><a href="#org71e2b9b">3. __enter__, <span class="underline"><span class="underline">exit</span></span> and with statement</a></li>
+<li><a href="#org157282f">4. __enter__, <span class="underline"><span class="underline">exit</span></span> and with statement</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2b6b2fc" class="outline-2">
-<h2 id="org2b6b2fc"><span class="section-number-2">1</span> Decorater</h2>
+
+<div id="outline-container-org3a3de08" class="outline-2">
+<h2 id="org3a3de08"><span class="section-number-2">1</span> 参数传递</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgd61af59" class="outline-3">
-<h3 id="orgd61af59"><span class="section-number-3">1.1</span> stack overflow</h3>
-<div class="outline-text-3" id="text-1-1">
+<p>
+对于变量（与对象相对的概念），其实，python 函数参数传递可以理解为就是变量传值操作，用 C++的方式理解，就是对 void*赋值。如果这个变量的值不变，我们看似就是引用，如果这个变量的值改变，我们看着像是在赋值。
+</p>
+</div>
+</div>
+<div id="outline-container-org3d501e9" class="outline-2">
+<h2 id="org3d501e9"><span class="section-number-2">2</span> Decorater</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-orgb8f4b34" class="outline-3">
+<h3 id="orgb8f4b34"><span class="section-number-3">2.1</span> stack overflow</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 <a href="http://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators-in-python">what is decorators</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgaf4d442" class="outline-3">
-<h3 id="orgaf4d442"><span class="section-number-3">1.2</span> @classmethod and @staticmethod</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgce599ec" class="outline-3">
+<h3 id="orgce599ec"><span class="section-number-3">2.2</span> @classmethod and @staticmethod</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
 <a href="http://stackoverflow.com/questions/12179271/python-classmethod-and-staticmethod-for-beginner">staticmethod and classmethod on SO</a>
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org1363a7b" class="outline-2">
-<h2 id="org1363a7b"><span class="section-number-2">2</span> Super</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-orgcf579e5" class="outline-3">
-<h3 id="orgcf579e5"><span class="section-number-3">2.1</span> Raymond Hettinger 's paper</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org1128028" class="outline-2">
+<h2 id="org1128028"><span class="section-number-2">3</span> Super</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-orga6aa228" class="outline-3">
+<h3 id="orga6aa228"><span class="section-number-3">3.1</span> Raymond Hettinger 's paper</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
 <a href="https://rhettinger.wordpress.com/2011/05/26/super-considered-super/">super considered super</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgef14246" class="outline-3">
-<h3 id="orgef14246"><span class="section-number-3">2.2</span> Super() ," object. new ()" and "object. del ()"</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-orgfa580f0" class="outline-3">
+<h3 id="orgfa580f0"><span class="section-number-3">3.2</span> Super() ," object. new ()" and "object. del ()"</h3>
+<div class="outline-text-3" id="text-3-2">
 <p>
 "object. new ()"
-自定义 " new ()" 方法一般并不常用，而且容易与  init () 相混淆。实际上这两个方法也确实相似，比如他们都是在创建类的实例时会被默认调用的方法，而且创建实例时传入的参数也都会传到这两个方法里。但他们也有很重要的区别，比如对  new () 的调用比  init () 要早， new () 有返回值， init () 木有。
+自定义 " new ()" 方法一般并不常用，而且容易与  init () 相混淆。实际上这两个方法也确实相似，比如他们都是在创建类的实例时会被默认调用的方法，而且创建实例时传入的参数也都会传到这两个方法里。但他们也有很重要的区别，比如对  new () 的调用比  init () 要早，new () 有返回值，init () 木有。
 </p>
 
 <p>
@@ -316,11 +326,8 @@ for the JavaScript code in this tag.
 </p>
 
 <p>
-创建 foo 这个名字
-调用 MyClass 类的  new () 静态方法，返回一个类实例
-将 new () 返回的类实例赋值给 foo
-这个实例被当做 self 参数传给  init ()，以完成该实例的初始化工作
-即，真正完成构造实例工作的是  new () 方法，调用它需要一个默认参数 cls，就是将要返回的这个实例所属的类（MyClass）。一般情况下因为  new () 极少被覆盖，最终调用的都是 object. new ()。这个时候我们的实例已经被创建了，就可以当做 self 参数传给  init () 了， init () 做的工作其实仅是初始化一些属性值之类的，与严格意义下的“构造”实例无关。
+创建 foo 这个名字调用 MyClass 类的  new () 静态方法，返回一个类实例将 new () 返回的类实例赋值给 foo
+这个实例被当做 self 参数传给  init ()，以完成该实例的初始化工作即，真正完成构造实例工作的是  new () 方法，调用它需要一个默认参数 cls，就是将要返回的这个实例所属的类（MyClass）。一般情况下因为  new () 极少被覆盖，最终调用的都是 object. new ()。这个时候我们的实例已经被创建了，就可以当做 self 参数传给  init () 了，init () 做的工作其实仅是初始化一些属性值之类的，与严格意义下的“构造”实例无关。
 </p>
 
 <p>
@@ -457,15 +464,15 @@ super(type) -&gt; unbound super object
 </p>
 
 <p>
-最后要说的是调用父类方法时的语句，可以看到上面的两个例子不管父类方法有没有返回值（ new  或  init ），都使用 return 来调用。这样的好处在于不用去关心该方法到底有没有返回值，就算没有，return expression 的 expression 也一样会被执行，然后 return 一个 None，这显然没什么坏处。
+最后要说的是调用父类方法时的语句，可以看到上面的两个例子不管父类方法有没有返回值（new  或  init），都使用 return 来调用。这样的好处在于不用去关心该方法到底有没有返回值，就算没有，return expression 的 expression 也一样会被执行，然后 return 一个 None，这显然没什么坏处。
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org71e2b9b" class="outline-2">
-<h2 id="org71e2b9b"><span class="section-number-2">3</span> __enter__, <span class="underline"><span class="underline">exit</span></span> and with statement</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org157282f" class="outline-2">
+<h2 id="org157282f"><span class="section-number-2">4</span> __enter__, <span class="underline"><span class="underline">exit</span></span> and with statement</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 [<a href="http://stackoverflow.com/questions/1984325/explaining-pythons-enter-and-exit%5D%5BSO">http://stackoverflow.com/questions/1984325/explaining-pythons-enter-and-exit][SO</a>]
 Using these magic methods (<span class="underline"><span class="underline">enter</span></span>, <span class="underline"><span class="underline">exit</span></span>) allows you to implement objects which can be used easily with the with statement.
@@ -510,7 +517,7 @@ with DatabaseConnection() as mydbconn:
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: mark-linux</p>
-<p class="date">Created: 2016-11-15 Tue 23:09</p>
+<p class="date">Created: 2016-11-24 Thu 17:44</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
