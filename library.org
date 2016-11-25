@@ -12,5 +12,7 @@
 
 * search engine 
   whoosh
+* testing
+  [[http://locust.io/][the load speed test]]
 
 
