@@ -27,6 +27,7 @@
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
 **** [[https://github.com/rofl0r/proxychains-ng][git]]
 * Algorithms
+** [[http://d0evi1.com/wang-jenkins-hash/][jenkins hash]]
 ** algorithms
 ** text book and website
 * AI
@@ -44,3 +45,4 @@
 ** [[file:resume.org][resume]]
 * uncollected
 ** [[file:uncollected.org][uncollected]]
+   
