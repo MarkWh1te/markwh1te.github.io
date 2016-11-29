@@ -15,7 +15,7 @@
 ** vim shortcut
 ** org mode
 * Linux 
-** shell
+** [[file:shell.org][shell]]
 ** [[file:app_config.org][app_config]]
 ** [[http://stackoverflow.com/questions/5656530/how-to-use-shared-memory-with-linux-in-c][memory]]
 * Database
@@ -45,4 +45,3 @@
 ** [[file:resume.org][resume]]
 * uncollected
 ** [[file:uncollected.org][uncollected]]
-   
