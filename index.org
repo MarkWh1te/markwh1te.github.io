@@ -1,6 +1,6 @@
 #+TITLE: MarkWhite Personal Wiki
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
-#+OPTIONS: toc:nil ^:nil 
+#+OPTIONS:  ^:nil 
 
 * Python
 ** [[file:syntax.org][syntax]]
@@ -41,6 +41,8 @@
 * Math
 ** [[https://en.wikipedia.org/wiki/Horner%27s_method][horner's rule]]
    說白了就是瘋狂對 x 提取公因子
+# todo
+** 多项式公式
 * resume
 ** [[file:resume.org][resume]]
 * uncollected
