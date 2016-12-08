@@ -45,6 +45,7 @@
    說白了就是瘋狂對 x 提取公因子
 # todo
 ** 多项式公式
+** [[https://en.wikipedia.org/wiki/Sigmoid_function][sigmoid_function]]
 * resume
 ** [[file:resume.org][resume]]
 * uncollected
