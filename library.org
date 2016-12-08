@@ -2,6 +2,9 @@
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+OPTIONS: ^:nil 
 
+* about math
+** [[http://matplotlib.org/][matplotlib]]
+** [[http://www.numpy.org/][numpy]]
 * itertools
   [[http://stackoverflow.com/questions/4114167/checking-if-a-number-is-a-prime-number-in-python][example test]]
 * Socket
