@@ -46,6 +46,7 @@
 # todo
 ** 多项式公式
 ** [[https://en.wikipedia.org/wiki/Sigmoid_function][sigmoid_function]]
+** [[https://en.wikipedia.org/wiki/Collatz_conjecture][Collatz_conjecture]]
 * resume
 ** [[file:resume.org][resume]]
 * uncollected
