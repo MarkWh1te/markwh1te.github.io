@@ -47,6 +47,7 @@
 ** 多项式公式
 ** [[https://en.wikipedia.org/wiki/Sigmoid_function][sigmoid_function]]
 ** [[https://en.wikipedia.org/wiki/Collatz_conjecture][Collatz_conjecture]]
+   [[http://www.ericr.nl/wondrous/index.html][website about collatz conjecture]]
 * resume
 ** [[file:resume.org][resume]]
 * uncollected
