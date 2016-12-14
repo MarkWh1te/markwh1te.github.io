@@ -24,6 +24,8 @@
 * Database
 ** [[file:mysql.org][mysql]]
 ** [[file:mongodb.org][mongoDB]]
+*** db.collection.drop()
+*** in python you must from bson import ObjectId to initialization a primry key 
 * Internets
 ** proxychains
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
