@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-12-08 Thu 08:57 -->
+<!-- 2016-12-15 Thu 10:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Python good library</title>
@@ -234,56 +234,65 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org228976f">1. about math</a>
+<li><a href="#orgc91c3ae">1. about math</a>
 <ul>
-<li><a href="#orged541d3">1.1. matplotlib</a></li>
-<li><a href="#org954ab38">1.2. numpy</a></li>
+<li><a href="#orga65fb36">1.1. matplotlib</a></li>
+<li><a href="#org91cd8a0">1.2. numpy</a></li>
 </ul>
 </li>
-<li><a href="#org41f5d28">2. itertools</a></li>
-<li><a href="#org678621d">3. Socket</a>
+<li><a href="#org9f8e3c4">2. itertools</a></li>
+<li><a href="#orge9b6bec">3. Socket</a>
 <ul>
-<li><a href="#org455a73f">3.1. socket turtorial</a></li>
+<li><a href="#orgb5b87c1">3.1. socket turtorial</a></li>
 </ul>
 </li>
-<li><a href="#org2e4ce67">4. coroutine</a>
+<li><a href="#org4307bd1">4. coroutine</a>
 <ul>
-<li><a href="#org47278b3">4.1. gevent</a>
+<li><a href="#org22e417c">4.1. gevent</a>
 <ul>
-<li><a href="#org51eec1d">4.1.1. Fast event loop based on libev (epoll on Linux, kqueue on FreeBSD).</a></li>
+<li><a href="#org8237576">4.1.1. Fast event loop based on libev (epoll on Linux, kqueue on FreeBSD).</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org81562bc">5. search engine</a></li>
-<li><a href="#org7bf17ab">6. testing</a></li>
+<li><a href="#orgf3782ab">5. search engine</a></li>
+<li><a href="#orgaa193e4">6. testing</a></li>
+<li><a href="#org2dace0f">7. json</a>
+<ul>
+<li><a href="#org5b3f85e">7.1. import json</a>
+<ul>
+<li><a href="#org908d2f1">7.1.1. 如果要让 json dumps 的时候显示中文只要加入 ensure_ascii=False 就可以</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org228976f" class="outline-2">
-<h2 id="org228976f"><span class="section-number-2">1</span> about math</h2>
+<div id="outline-container-orgc91c3ae" class="outline-2">
+<h2 id="orgc91c3ae"><span class="section-number-2">1</span> about math</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orged541d3" class="outline-3">
-<h3 id="orged541d3"><span class="section-number-3">1.1</span> <a href="http://matplotlib.org/">matplotlib</a></h3>
+</div><div id="outline-container-orga65fb36" class="outline-3">
+<h3 id="orga65fb36"><span class="section-number-3">1.1</span> <a href="http://matplotlib.org/">matplotlib</a></h3>
 </div>
-<div id="outline-container-org954ab38" class="outline-3">
-<h3 id="org954ab38"><span class="section-number-3">1.2</span> <a href="http://www.numpy.org/">numpy</a></h3>
+<div id="outline-container-org91cd8a0" class="outline-3">
+<h3 id="org91cd8a0"><span class="section-number-3">1.2</span> <a href="http://www.numpy.org/">numpy</a></h3>
 </div>
 </div>
-<div id="outline-container-org41f5d28" class="outline-2">
-<h2 id="org41f5d28"><span class="section-number-2">2</span> itertools</h2>
+<div id="outline-container-org9f8e3c4" class="outline-2">
+<h2 id="org9f8e3c4"><span class="section-number-2">2</span> itertools</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="http://stackoverflow.com/questions/4114167/checking-if-a-number-is-a-prime-number-in-python">example test</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org678621d" class="outline-2">
-<h2 id="org678621d"><span class="section-number-2">3</span> Socket</h2>
+<div id="outline-container-orge9b6bec" class="outline-2">
+<h2 id="orge9b6bec"><span class="section-number-2">3</span> Socket</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-org455a73f" class="outline-3">
-<h3 id="org455a73f"><span class="section-number-3">3.1</span> <a href="http://www.tutorialspoint.com/python/python_networking.htm">socket turtorial</a></h3>
+</div><div id="outline-container-orgb5b87c1" class="outline-3">
+<h3 id="orgb5b87c1"><span class="section-number-3">3.1</span> <a href="http://www.tutorialspoint.com/python/python_networking.htm">socket turtorial</a></h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 <a href="https://docs.python.org/2.7/howto/sockets.html">doc python turtorial</a>
@@ -292,38 +301,51 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org2e4ce67" class="outline-2">
-<h2 id="org2e4ce67"><span class="section-number-2">4</span> coroutine</h2>
+<div id="outline-container-org4307bd1" class="outline-2">
+<h2 id="org4307bd1"><span class="section-number-2">4</span> coroutine</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-org47278b3" class="outline-3">
-<h3 id="org47278b3"><span class="section-number-3">4.1</span> <a href="https://github.com/gevent/gevent">gevent</a></h3>
+</div><div id="outline-container-org22e417c" class="outline-3">
+<h3 id="org22e417c"><span class="section-number-3">4.1</span> <a href="https://github.com/gevent/gevent">gevent</a></h3>
 <div class="outline-text-3" id="text-4-1">
-</div><div id="outline-container-org51eec1d" class="outline-4">
-<h4 id="org51eec1d"><span class="section-number-4">4.1.1</span> Fast event loop based on libev (epoll on Linux, kqueue on FreeBSD).</h4>
+</div><div id="outline-container-org8237576" class="outline-4">
+<h4 id="org8237576"><span class="section-number-4">4.1.1</span> Fast event loop based on libev (epoll on Linux, kqueue on FreeBSD).</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org81562bc" class="outline-2">
-<h2 id="org81562bc"><span class="section-number-2">5</span> search engine</h2>
+<div id="outline-container-orgf3782ab" class="outline-2">
+<h2 id="orgf3782ab"><span class="section-number-2">5</span> search engine</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 whoosh
 </p>
 </div>
 </div>
-<div id="outline-container-org7bf17ab" class="outline-2">
-<h2 id="org7bf17ab"><span class="section-number-2">6</span> testing</h2>
+<div id="outline-container-orgaa193e4" class="outline-2">
+<h2 id="orgaa193e4"><span class="section-number-2">6</span> testing</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 <a href="http://locust.io/">the load speed test</a>
 </p>
 </div>
 </div>
+
+
+<div id="outline-container-org2dace0f" class="outline-2">
+<h2 id="org2dace0f"><span class="section-number-2">7</span> json</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-org5b3f85e" class="outline-3">
+<h3 id="org5b3f85e"><span class="section-number-3">7.1</span> import json</h3>
+<div class="outline-text-3" id="text-7-1">
+</div><div id="outline-container-org908d2f1" class="outline-4">
+<h4 id="org908d2f1"><span class="section-number-4">7.1.1</span> 如果要让 json dumps 的时候显示中文只要加入 ensure_ascii=False 就可以</h4>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: mark-linux</p>
-<p class="date">Created: 2016-12-08 Thu 08:57</p>
+<p class="date">Created: 2016-12-15 Thu 10:41</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -21,3 +21,6 @@
   [[http://locust.io/][the load speed test]]
 
 
+* json
+** import json
+*** 如果要让 json dumps 的时候显示中文只要加入 ensure_ascii=False 就可以
