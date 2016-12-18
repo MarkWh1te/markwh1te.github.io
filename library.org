@@ -5,7 +5,9 @@
 * about math
 ** [[http://matplotlib.org/][matplotlib]]
 ** [[http://www.numpy.org/][numpy]]
-* itertools
+*** [[http://www.bogotobogo.com/python/python_numpy_matrix_tutorial.php][matrix and vector turtorial]]
+****  eye 对角矩阵 full 可以填充矩阵为同一个数值
+* itertoolsk
   [[http://stackoverflow.com/questions/4114167/checking-if-a-number-is-a-prime-number-in-python][example test]]
 * Socket
 ** [[http://www.tutorialspoint.com/python/python_networking.htm][socket turtorial]]
@@ -19,7 +21,6 @@
   whoosh
 * testing
   [[http://locust.io/][the load speed test]]
-
 
 * json
 ** import json
