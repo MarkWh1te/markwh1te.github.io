@@ -2,12 +2,6 @@
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+OPTIONS:  ^:nil 
 
-* Python
-** [[file:syntax.org][syntax]]
-** [[file:django.org][django]]
-** [[file:flask.org][flask]]
-** [[file:celery.org][celery]]
-** [[file:library.org][library]]
 * Emacs
 ** spacemacs
 *** [[https://github.com/syl20bnr/spacemacs/tree/master/layers][view layers doc]]
@@ -26,6 +20,14 @@
 ** [[file:mongodb.org][mongoDB]]
 *** db.collection.drop()
 *** in python you must from bson import ObjectId to initialization a primry key 
+* Python
+** [[file:syntax.org][syntax]]
+** [[file:django.org][django]]
+** [[file:flask.org][flask]]
+** [[file:celery.org][celery]]
+** [[file:library.org][library]]
+* Scala
+  replace ~/.sbt/repositories with my file in blackmagic please:)!
 * Internets
 ** proxychains
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
