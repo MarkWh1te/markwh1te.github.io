@@ -27,7 +27,9 @@
 ** [[file:celery.org][celery]]
 ** [[file:library.org][library]]
 * Scala
-  replace ~/.sbt/repositories with my file in blackmagic please:)!
+** sbt slow problem
+    replace ~/.sbt/repositories with my file in blackmagic please:)!
+    http://centaur.github.io/repox/
 * Internets
 ** proxychains
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
