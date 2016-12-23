@@ -30,6 +30,8 @@
 ** sbt slow problem
     replace ~/.sbt/repositories with my file in blackmagic please:)!
     http://centaur.github.io/repox/
+** traning site
+   [[https://www.scala-exercises.org/std_lib/asserts][scala-excerise]]
 * Internets
 ** proxychains
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
