@@ -42,6 +42,10 @@
 ** [[http://d0evi1.com/wang-jenkins-hash/][jenkins hash]]
 ** algorithms
 ** text book and website
+** data structure
+*** 一个有趣的数据结构 bloom filter 
+    它可以在有限的内存空间内存储无限的数据，你添加数据增加的是查询时候返回错误答案的概率。
+    [[https://en.wikipedia.org/wiki/Bloom_filter][bloom filter]]
 * AI
 ** [[file:npl.org][npl]]
 ** [[file:tensorflow.org][tensorflow]]
