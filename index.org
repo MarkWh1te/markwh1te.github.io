@@ -7,6 +7,14 @@
 *** [[https://github.com/syl20bnr/spacemacs/tree/master/layers][view layers doc]]
 *** [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Btags][tags]]
 ** vim shortcut
+   o 在下一行插入
+   O 在上一行插入
+   A 到行尾插入
+   :%s/old/new/g 全局替换
+   :line number 跳到某一行
+   cw 替换到 word 结尾
+   c$ 替换到 line 结尾
+   R 替换到结尾
 ** org mode
 ** [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bsource-control/git][magit]]
 * Linux 
