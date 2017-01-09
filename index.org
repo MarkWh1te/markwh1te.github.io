@@ -63,6 +63,9 @@
 * Scheme
 ** list 
 * Math
+** [[https://en.wikipedia.org/wiki/Euclidean_distance][Euclidean Distance]]
+*** 常用与 svm 的 kernel,还有 perceptron 的计算中
+*** 本质就是向量对自己点乘法然后开根号
 ** [[https://en.wikipedia.org/wiki/Horner%27s_method][horner's rule]]
    說白了就是瘋狂對 x 提取公因子
 # todo
