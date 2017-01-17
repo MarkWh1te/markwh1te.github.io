@@ -55,6 +55,9 @@
     它可以在有限的内存空间内存储无限的数据，你添加数据增加的是查询时候返回错误答案的概率。
     [[https://en.wikipedia.org/wiki/Bloom_filter][bloom filter]]
 * Machine Learning
+** random forest
+*** [[https://en.wikipedia.org/wiki/Random_forest][wiki]]
+*** [[http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html][sklearn]]
 ** activation function
 *** [[https://en.wikipedia.org/wiki/Rectifier_(neural_networks)][Rectifier]]
 ** [[file:npl.org][npl]]
