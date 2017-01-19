@@ -56,7 +56,7 @@
     [[https://en.wikipedia.org/wiki/Bloom_filter][bloom filter]]
 * Machine Learning
 ** ensembling is very important !!!(at least for kaggle)
-*** [ [ http://mlwave.com/kaggle-ensembling-guide/ ][this is why] ]
+*** [[http://mlwave.com/kaggle-ensembling-guide/ ][this is why]]
 ** random forest
 *** [[https://en.wikipedia.org/wiki/Random_forest][wiki]]
 *** [[http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html][sklearn]]
