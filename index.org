@@ -64,6 +64,8 @@
 *** [[https://en.wikipedia.org/wiki/Rectifier_(neural_networks)][Rectifier]]
 ** [[file:npl.org][npl]]
 ** [[file:tensorflow.org][tensorflow]]
+** [[https://en.wikipedia.org/wiki/Scientific_notation][scientific notation]]
+*** [[http://stackoverflow.com/questions/26174531/what-is-the-meaning-of-number-1e5][so link]]
 * Life
 ** what worth fighting for
 ** good youtube vedio
