@@ -84,8 +84,11 @@
    [[http://www.ericr.nl/wondrous/index.html][website about collatz conjecture]]
 ** [[http://www.math-prof.com/Calculus_1/Calc_Ch_06.asp][differential calculus]]
 * font end
-** html boilerplate
+** html boilerplateo
+
 *** [[https://github.com/h5bp/html5-boilerplate][github link]]
+** jQuery material
+*** [[http://www.w3schools.com/jquery/default.asp][w3schools]]
 * resume
 ** [[file:resume.org][resume]]
 * uncollected
