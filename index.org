@@ -35,6 +35,8 @@
 ** [[file:celery.org][celery]]
 ** [[file:library.org][library]]
 * Scala
+** sbt template generator with new command
+*** [[http://www.scala-sbt.org/0.13/docs/sbt-new-and-Templates.html][this is official guide]]
 ** sbt slow problem
     replace ~/.sbt/repositories with my file in blackmagic please:)!
     http://centaur.github.io/repox/
