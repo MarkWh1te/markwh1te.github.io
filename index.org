@@ -35,13 +35,18 @@
 ** [[file:celery.org][celery]]
 ** [[file:library.org][library]]
 * Scala
-** sbt template generator with new command
-*** [[http://www.scala-sbt.org/0.13/docs/sbt-new-and-Templates.html][this is official guide]]
-** sbt slow problem
-    replace ~/.sbt/repositories with my file in blackmagic please:)!
-    http://centaur.github.io/repox/
-** traning site
-   [[https://www.scala-exercises.org/std_lib/asserts][scala-excerise]]
+** material
+*** sbt template generator with new command
+**** [[http://www.scala-sbt.org/0.13/docs/sbt-new-and-Templates.html][this is official guide]]
+*** sbt slow problem
+*    replace ~/.sbt/repositories with my file in blackmagic please:)!
+*    http://centaur.github.io/repox/
+*** traning sitei
+*
+*   [[https://www.scala-exercises.org/std_lib/asserts][scala-excerise]]
+** knowledge
+*** [[http://stackoverflow.com/questions/13052735/is-my-understanding-of-below-scala-code-correct][understanding type keyword]]
+**** type is alas of type signature
 * Internets
 ** proxychains
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
