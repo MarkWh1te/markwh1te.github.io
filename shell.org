@@ -15,3 +15,4 @@
 * chmod
   - [[http://www.computerhope.com/unix/uchmod.html][read info]]
 * [[https://github.com/michael-lazar/rtv][reddit terminal]]
+* command line dict [[https://linux.die.net/man/1/dict][dict]]
