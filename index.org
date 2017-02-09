@@ -50,6 +50,7 @@
 **** A class is a definition, a description. It defines a type in terms of methods and composition of other types.
 **** An object is a singleton -- an instance of a class which is guaranteed to be unique. For every object in the code, an anonymous class is created, which inherits from whatever classes you declared object to implement. This class cannot be seen from Scala source code -- though you can get at it through reflection.
 *** [[https://segmentfault.com/a/1190000005083578][::,:::,:+,+:的区别]]
+*** [[http://www.brunton-spall.co.uk/post/2011/12/02/map-map-and-flatmap-in-scala/][scala map flatmap 的区别]]   flatmap 就是把 map 拍平 也可以理解为对子结构递归 map 然后展开为 list
 ** data structure
 *** [[http://www.scala-lang.org/api/2.12.1/scala/collection/immutable/List.html][class List and its methods]]
 * Internets
