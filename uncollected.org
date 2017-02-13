@@ -8,3 +8,5 @@
 https://github.com/lu-ko/scala-coursera-progfun/
 
 https://book.douban.com/review/5601964/
+
+https://gist.github.com/jottr/a2351377b7584abf100b
