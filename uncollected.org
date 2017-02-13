@@ -6,3 +6,5 @@
 [[https://github.com/warmheartli/ChatBotCourse][ml]]
 
 https://github.com/lu-ko/scala-coursera-progfun/
+
+https://book.douban.com/review/5601964/
