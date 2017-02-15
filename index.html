@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-02-15 Wed 17:33 -->
+<!-- 2017-02-15 Wed 18:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>MarkWhite Personal Wiki</title>
@@ -229,7 +229,7 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="org-div-home-and-up">
- <a accesskey="h" href=""> UP </a>
+ <a accesskey="h" href="http://www.markwh1te.com/"> UP </a>
  |
  <a accesskey="H" href="index.html"> HOME </a>
 </div><div id="content">
@@ -238,351 +238,326 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org77d62b8">1. Emacs</a>
+<li><a href="#orgcbaa7be">1. Emacs</a>
 <ul>
-<li><a href="#org61bbbb2">1.1. spacemacs</a>
+<li><a href="#orge8d7b4b">1.1. spacemacs</a>
 <ul>
-<li><a href="#org50ee83b">1.1.1. view layers doc</a></li>
-<li><a href="#org81f20c3">1.1.2. tags</a></li>
+<li><a href="#orgd50c467">1.1.1. view layers doc</a></li>
+<li><a href="#orgff2fa67">1.1.2. tags</a></li>
 </ul>
 </li>
-<li><a href="#org25e665d">1.2. vim shortcut</a>
+<li><a href="#orgd2f3ac5">1.2. vim shortcut</a>
 <ul>
-<li><a href="#orgfdc6406">1.2.1. o 在下一行插入</a></li>
-<li><a href="#org3aaecf5">1.2.2. O 在上一行插入</a></li>
-<li><a href="#orga84d0ea">1.2.3. A 到行尾插入</a></li>
-<li><a href="#org9259449">1.2.4. :%s/old/new/g 全局替换</a></li>
-<li><a href="#org8f230df">1.2.5. :line number 跳到某一行</a></li>
-<li><a href="#org6dd3309">1.2.6. cw 替换到 word 结尾</a></li>
-<li><a href="#orgf7db431">1.2.7. c$ 替换到 line 结尾</a></li>
-<li><a href="#orgad14b19">1.2.8. R 替换到结尾</a></li>
+<li><a href="#orgd0a4c22">1.2.1. o 在下一行插入</a></li>
+<li><a href="#orgefefaf9">1.2.2. O 在上一行插入</a></li>
+<li><a href="#orgaa3b915">1.2.3. A 到行尾插入</a></li>
+<li><a href="#org2f758b0">1.2.4. :%s/old/new/g 全局替换</a></li>
+<li><a href="#orgece45b9">1.2.5. :line number 跳到某一行</a></li>
+<li><a href="#org4786c06">1.2.6. cw 替换到 word 结尾</a></li>
+<li><a href="#org57792d5">1.2.7. c$ 替换到 line 结尾</a></li>
+<li><a href="#org2ee2d63">1.2.8. R 替换到结尾</a></li>
 </ul>
 </li>
-<li><a href="#org86c92b5">1.3. org mode</a></li>
-<li><a href="#org1c39cdf">1.4. magit</a></li>
+<li><a href="#org00599e6">1.3. org mode</a></li>
+<li><a href="#org9b2d06c">1.4. magit</a></li>
 </ul>
 </li>
-<li><a href="#org21d5b6e">2. Linux</a>
+<li><a href="#org9fba236">2. Linux</a>
 <ul>
-<li><a href="#org61a65fb">2.1. File descriptor</a></li>
-<li><a href="#org3c13ba1">2.2. shell</a></li>
-<li><a href="#org070fc0e">2.3. app_config</a></li>
-<li><a href="#orga00248d">2.4. memory</a></li>
+<li><a href="#org96edfb8">2.1. File descriptor</a></li>
+<li><a href="#org889a060">2.2. shell</a></li>
+<li><a href="#org0dd9af8">2.3. app_config</a></li>
+<li><a href="#org907be73">2.4. memory</a></li>
 </ul>
 </li>
-<li><a href="#orgff5cb7b">3. Database</a>
+<li><a href="#orgac82f6b">3. Database</a>
 <ul>
-<li><a href="#org840316d">3.1. mysql</a></li>
-<li><a href="#org95ca65c">3.2. mongoDB</a>
+<li><a href="#org74e632b">3.1. mysql</a></li>
+<li><a href="#org77b6728">3.2. mongoDB</a>
 <ul>
-<li><a href="#orgee6357f">3.2.1. db.collection.drop()</a></li>
-<li><a href="#orgae66eef">3.2.2. in python you must from bson import ObjectId to initialization a primry key</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgeb4c427">4. Python</a>
-<ul>
-<li><a href="#org0b2835d">4.1. syntax</a></li>
-<li><a href="#org80d729d">4.2. django</a></li>
-<li><a href="#orga2ddd71">4.3. flask</a></li>
-<li><a href="#org05a75e5">4.4. celery</a></li>
-<li><a href="#org4e97b8b">4.5. library</a></li>
-</ul>
-</li>
-<li><a href="#org64325bb">5. Scala</a>
-<ul>
-<li><a href="#orgf779811">5.1. material</a>
-<ul>
-<li><a href="#org83a30b9">5.1.1. sbt template generator with new command</a></li>
-</ul>
-</li>
-<li><a href="#org3b3cfa3">5.2. sbt slow problem</a>
-<ul>
-<li><a href="#orgc5ecc76">5.2.1. replace ~/.sbt/repositories with my file in blackmagic please:)!</a></li>
-<li><a href="#orgaec9c96">5.2.2. </a></li>
-</ul>
-</li>
-<li><a href="#orgfe13b35">5.3. traning site</a>
-<ul>
-<li><a href="#org49309cb">5.3.1. scala-excerise</a></li>
-</ul>
-</li>
-<li><a href="#orgf5c2f15">5.4. knowledge</a>
-<ul>
-<li><a href="#org5576247">5.4.1. understanding type keyword</a></li>
-<li><a href="#org71cf304">5.4.2. the difference between class and object</a></li>
-<li><a href="#org4d35857">5.4.3. ::,:::,:+,+:的区别</a></li>
-<li><a href="#org93b0334">5.4.4. scala map flatmap 的区别   flatmap 就是把 map 拍平 也可以理解为对子结构递归 map 然后展开为 list</a></li>
-<li><a href="#orgfca8447">5.4.5. scala fold foldleft foldright</a></li>
-</ul>
-</li>
-<li><a href="#orgbdc6dc7">5.5. data structure</a>
-<ul>
-<li><a href="#org9b855e3">5.5.1. class List and its methods</a></li>
+<li><a href="#org05145e6">3.2.1. db.collection.drop()</a></li>
+<li><a href="#org971f507">3.2.2. in python you must from bson import ObjectId to initialization a primry key</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgaeb1d7b">6. Internets</a>
+<li><a href="#orgeac0349">4. Python</a>
 <ul>
-<li><a href="#org5d05432">6.1. proxychains</a></li>
-<li><a href="#org1335385">6.2. java servlet</a></li>
-<li><a href="#org907e9f5">6.3. sockstress</a></li>
+<li><a href="#orgd43e5b6">4.1. syntax</a></li>
+<li><a href="#org8a7eeee">4.2. django</a></li>
+<li><a href="#org684a3cb">4.3. flask</a></li>
+<li><a href="#orgd336a78">4.4. celery</a></li>
+<li><a href="#orge572bc8">4.5. library</a></li>
 </ul>
 </li>
-<li><a href="#org5c8bd6c">7. Algorithms</a>
+<li><a href="#org8eee425">5. Scala</a>
 <ul>
-<li><a href="#orgbf65f22">7.1. jenkins hash</a></li>
-<li><a href="#org95057a0">7.2. algorithms</a></li>
-<li><a href="#org72cc1ca">7.3. text book and website</a></li>
-<li><a href="#orgebf9d99">7.4. data structure</a>
+<li><a href="#orgb0dddd5">5.1. material</a>
 <ul>
-<li><a href="#org99321e6">7.4.1. 一个有趣的数据结构 bloom filter</a></li>
+<li><a href="#orgd4bd8de">5.1.1. sbt template generator with new command</a></li>
 </ul>
 </li>
+<li><a href="#org05eb32c">5.2. sbt slow problem</a>
+<ul>
+<li><a href="#org79d0a2c">5.2.1. replace ~/.sbt/repositories with my file in blackmagic please:)!</a></li>
+<li><a href="#org0251ed9">5.2.2. </a></li>
 </ul>
 </li>
-<li><a href="#org9daee7a">8. Machine Learning</a>
+<li><a href="#orgdce70ab">5.3. traning site</a>
 <ul>
-<li><a href="#orgaed1d12">8.1. ensembling is very important !!!(at least for kaggle)</a>
-<ul>
-<li><a href="#org3f5adbc">8.1.1. this is why</a></li>
+<li><a href="#org24b89aa">5.3.1. scala-excerise</a></li>
 </ul>
 </li>
-<li><a href="#org7c8c551">8.2. random forest</a>
+<li><a href="#org9d4db17">5.4. knowledge</a>
 <ul>
-<li><a href="#orgaabf156">8.2.1. wiki</a></li>
-<li><a href="#org3a9bfd3">8.2.2. sklearn</a></li>
+<li><a href="#orgec8502f">5.4.1. understanding type keyword</a></li>
+<li><a href="#org203dcfd">5.4.2. the difference between class and object</a></li>
+<li><a href="#org6a0ea7a">5.4.3. ::,:::,:+,+:的区别</a></li>
+<li><a href="#org660d680">5.4.4. scala map flatmap 的区别   flatmap 就是把 map 拍平 也可以理解为对子结构递归 map 然后展开为 list</a></li>
+<li><a href="#org59fb45d">5.4.5. scala fold foldleft foldright</a></li>
 </ul>
 </li>
-<li><a href="#orgc20d66e">8.3. activation function</a>
+<li><a href="#org8f50f19">5.5. data structure</a>
 <ul>
-<li><a href="#orgfa81278">8.3.1. Rectifier</a></li>
-</ul>
-</li>
-<li><a href="#org69326d8">8.4. npl</a></li>
-<li><a href="#orgecc1cab">8.5. tensorflow</a></li>
-<li><a href="#org43c842b">8.6. scientific notation</a>
-<ul>
-<li><a href="#org5639f8b">8.6.1. so link</a></li>
+<li><a href="#org0a2835f">5.5.1. class List and its methods</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org19660cc">9. Life</a>
+<li><a href="#orge0c3b53">6. Internets</a>
 <ul>
-<li><a href="#orgd412860">9.1. what worth fighting for</a></li>
-<li><a href="#orgaa721b6">9.2. good youtube vedio</a></li>
+<li><a href="#orgdff3e18">6.1. proxychains</a></li>
+<li><a href="#org1ff0365">6.2. java servlet</a></li>
+<li><a href="#org80db46e">6.3. sockstress</a></li>
 </ul>
 </li>
-<li><a href="#org48e5adb">10. Scheme</a>
+<li><a href="#org1bb08f5">7. Algorithms</a>
 <ul>
-<li><a href="#org35ee403">10.1. list</a></li>
-</ul>
-</li>
-<li><a href="#org0cd1d13">11. Math</a>
+<li><a href="#orgd8ff66a">7.1. jenkins hash</a></li>
+<li><a href="#org249235f">7.2. algorithms</a></li>
+<li><a href="#org468dc81">7.3. text book and website</a></li>
+<li><a href="#orgbac27ec">7.4. data structure</a>
 <ul>
-<li><a href="#org95e8deb">11.1. Euclidean Distance</a>
-<ul>
-<li><a href="#org84ad4d9">11.1.1. 常用与 svm 的 kernel,还有 perceptron 的计算中</a></li>
-<li><a href="#orgeb0f6a9">11.1.2. 本质就是向量对自己点乘法然后开根号</a></li>
-</ul>
-</li>
-<li><a href="#org1d93230">11.2. horner's rule</a></li>
-<li><a href="#org6f04f08">11.3. 多项式公式</a></li>
-<li><a href="#org7433f39">11.4. sigmoid_function</a></li>
-<li><a href="#org2b428c3">11.5. Collatz_conjecture</a></li>
-<li><a href="#org1f11ac3">11.6. differential calculus</a></li>
-</ul>
-</li>
-<li><a href="#org6296fbc">12. font end</a>
-<ul>
-<li><a href="#org2a560c4">12.1. html boilerplateo</a>
-<ul>
-<li><a href="#org30b4f5d">12.1.1. github link</a></li>
-</ul>
-</li>
-<li><a href="#org2f635ec">12.2. jQuery material</a>
-<ul>
-<li><a href="#org74d8a2d">12.2.1. w3schools</a></li>
+<li><a href="#orgf3ec8dc">7.4.1. 一个有趣的数据结构 bloom filter</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org605d62c">13. resume</a>
+<li><a href="#org9111e99">8. Machine Learning</a>
 <ul>
-<li><a href="#orgf89e538">13.1. resume</a></li>
+<li><a href="#org73b92f3">8.1. ensembling is very important !!!(at least for kaggle)</a>
+<ul>
+<li><a href="#org39caada">8.1.1. this is why</a></li>
 </ul>
 </li>
-<li><a href="#orgfb16fb6">14. uncollected</a>
+<li><a href="#org0143e04">8.2. random forest</a>
 <ul>
-<li><a href="#orgf445c2b">14.1. uncollected</a></li>
+<li><a href="#orge48abe7">8.2.1. wiki</a></li>
+<li><a href="#org1d77b32">8.2.2. sklearn</a></li>
 </ul>
 </li>
-<li><a href="#org174ae23">15. good quotes</a></li>
+<li><a href="#orga3b94b2">8.3. activation function</a>
+<ul>
+<li><a href="#orgcc23aed">8.3.1. Rectifier</a></li>
+</ul>
+</li>
+<li><a href="#orgf66c61d">8.4. npl</a></li>
+<li><a href="#orgbce74a2">8.5. tensorflow</a></li>
+<li><a href="#org48a577b">8.6. scientific notation</a>
+<ul>
+<li><a href="#org41b90ea">8.6.1. so link</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgeec008b">9. Life</a>
+<ul>
+<li><a href="#org87c0679">9.1. what worth fighting for</a></li>
+<li><a href="#org6f82fb5">9.2. good youtube vedio</a></li>
+</ul>
+</li>
+<li><a href="#org6cb94eb">10. Scheme</a>
+<ul>
+<li><a href="#orgec33475">10.1. list</a></li>
+</ul>
+</li>
+<li><a href="#orgfe2c092">11. Math</a>
+<ul>
+<li><a href="#org58629af">11.1. Euclidean Distance</a>
+<ul>
+<li><a href="#org138f920">11.1.1. 常用与 svm 的 kernel,还有 perceptron 的计算中</a></li>
+<li><a href="#org46c6c36">11.1.2. 本质就是向量对自己点乘法然后开根号</a></li>
+</ul>
+</li>
+<li><a href="#org7f904b6">11.2. horner's rule</a></li>
+<li><a href="#org1358a58">11.3. 多项式公式</a></li>
+<li><a href="#org44bca50">11.4. sigmoid_function</a></li>
+<li><a href="#org665585f">11.5. Collatz_conjecture</a></li>
+<li><a href="#org4f43976">11.6. differential calculus But if you learn principles, you can devise your own methods.” —Ralph Waldo Emerson</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org77d62b8" class="outline-2">
-<h2 id="org77d62b8"><span class="section-number-2">1</span> Emacs</h2>
+<div id="outline-container-orgcbaa7be" class="outline-2">
+<h2 id="orgcbaa7be"><span class="section-number-2">1</span> Emacs</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-org61bbbb2" class="outline-3">
-<h3 id="org61bbbb2"><span class="section-number-3">1.1</span> spacemacs</h3>
+</div><div id="outline-container-orge8d7b4b" class="outline-3">
+<h3 id="orge8d7b4b"><span class="section-number-3">1.1</span> spacemacs</h3>
 <div class="outline-text-3" id="text-1-1">
-</div><div id="outline-container-org50ee83b" class="outline-4">
-<h4 id="org50ee83b"><span class="section-number-4">1.1.1</span> <a href="https://github.com/syl20bnr/spacemacs/tree/master/layers">view layers doc</a></h4>
+</div><div id="outline-container-orgd50c467" class="outline-4">
+<h4 id="orgd50c467"><span class="section-number-4">1.1.1</span> <a href="https://github.com/syl20bnr/spacemacs/tree/master/layers">view layers doc</a></h4>
 </div>
-<div id="outline-container-org81f20c3" class="outline-4">
-<h4 id="org81f20c3"><span class="section-number-4">1.1.2</span> <a href="https://github.com/syl20bnr/spacemacs/tree/master/layers/+tags">tags</a></h4>
+<div id="outline-container-orgff2fa67" class="outline-4">
+<h4 id="orgff2fa67"><span class="section-number-4">1.1.2</span> <a href="https://github.com/syl20bnr/spacemacs/tree/master/layers/+tags">tags</a></h4>
 </div>
 </div>
-<div id="outline-container-org25e665d" class="outline-3">
-<h3 id="org25e665d"><span class="section-number-3">1.2</span> vim shortcut</h3>
+<div id="outline-container-orgd2f3ac5" class="outline-3">
+<h3 id="orgd2f3ac5"><span class="section-number-3">1.2</span> vim shortcut</h3>
 <div class="outline-text-3" id="text-1-2">
-</div><div id="outline-container-orgfdc6406" class="outline-4">
-<h4 id="orgfdc6406"><span class="section-number-4">1.2.1</span> o 在下一行插入</h4>
+</div><div id="outline-container-orgd0a4c22" class="outline-4">
+<h4 id="orgd0a4c22"><span class="section-number-4">1.2.1</span> o 在下一行插入</h4>
 </div>
-<div id="outline-container-org3aaecf5" class="outline-4">
-<h4 id="org3aaecf5"><span class="section-number-4">1.2.2</span> O 在上一行插入</h4>
+<div id="outline-container-orgefefaf9" class="outline-4">
+<h4 id="orgefefaf9"><span class="section-number-4">1.2.2</span> O 在上一行插入</h4>
 </div>
-<div id="outline-container-orga84d0ea" class="outline-4">
-<h4 id="orga84d0ea"><span class="section-number-4">1.2.3</span> A 到行尾插入</h4>
+<div id="outline-container-orgaa3b915" class="outline-4">
+<h4 id="orgaa3b915"><span class="section-number-4">1.2.3</span> A 到行尾插入</h4>
 </div>
-<div id="outline-container-org9259449" class="outline-4">
-<h4 id="org9259449"><span class="section-number-4">1.2.4</span> :%s/old/new/g 全局替换</h4>
+<div id="outline-container-org2f758b0" class="outline-4">
+<h4 id="org2f758b0"><span class="section-number-4">1.2.4</span> :%s/old/new/g 全局替换</h4>
 </div>
-<div id="outline-container-org8f230df" class="outline-4">
-<h4 id="org8f230df"><span class="section-number-4">1.2.5</span> :line number 跳到某一行</h4>
+<div id="outline-container-orgece45b9" class="outline-4">
+<h4 id="orgece45b9"><span class="section-number-4">1.2.5</span> :line number 跳到某一行</h4>
 </div>
-<div id="outline-container-org6dd3309" class="outline-4">
-<h4 id="org6dd3309"><span class="section-number-4">1.2.6</span> cw 替换到 word 结尾</h4>
+<div id="outline-container-org4786c06" class="outline-4">
+<h4 id="org4786c06"><span class="section-number-4">1.2.6</span> cw 替换到 word 结尾</h4>
 </div>
-<div id="outline-container-orgf7db431" class="outline-4">
-<h4 id="orgf7db431"><span class="section-number-4">1.2.7</span> c$ 替换到 line 结尾</h4>
+<div id="outline-container-org57792d5" class="outline-4">
+<h4 id="org57792d5"><span class="section-number-4">1.2.7</span> c$ 替换到 line 结尾</h4>
 </div>
-<div id="outline-container-orgad14b19" class="outline-4">
-<h4 id="orgad14b19"><span class="section-number-4">1.2.8</span> R 替换到结尾</h4>
-</div>
-</div>
-<div id="outline-container-org86c92b5" class="outline-3">
-<h3 id="org86c92b5"><span class="section-number-3">1.3</span> org mode</h3>
-</div>
-<div id="outline-container-org1c39cdf" class="outline-3">
-<h3 id="org1c39cdf"><span class="section-number-3">1.4</span> <a href="https://github.com/syl20bnr/spacemacs/tree/master/layers/+source-control/git">magit</a></h3>
+<div id="outline-container-org2ee2d63" class="outline-4">
+<h4 id="org2ee2d63"><span class="section-number-4">1.2.8</span> R 替换到结尾</h4>
 </div>
 </div>
-<div id="outline-container-org21d5b6e" class="outline-2">
-<h2 id="org21d5b6e"><span class="section-number-2">2</span> Linux</h2>
+<div id="outline-container-org00599e6" class="outline-3">
+<h3 id="org00599e6"><span class="section-number-3">1.3</span> org mode</h3>
+</div>
+<div id="outline-container-org9b2d06c" class="outline-3">
+<h3 id="org9b2d06c"><span class="section-number-3">1.4</span> <a href="https://github.com/syl20bnr/spacemacs/tree/master/layers/+source-control/git">magit</a></h3>
+</div>
+</div>
+<div id="outline-container-org9fba236" class="outline-2">
+<h2 id="org9fba236"><span class="section-number-2">2</span> Linux</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org61a65fb" class="outline-3">
-<h3 id="org61a65fb"><span class="section-number-3">2.1</span> <a href="https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6">File descriptor</a></h3>
+</div><div id="outline-container-org96edfb8" class="outline-3">
+<h3 id="org96edfb8"><span class="section-number-3">2.1</span> <a href="https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6">File descriptor</a></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <a href="http://events.linuxfoundation.jp/sites/events/files/slides/fd_0.pdf">unix file stystem</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org3c13ba1" class="outline-3">
-<h3 id="org3c13ba1"><span class="section-number-3">2.2</span> <a href="shell.html">shell</a></h3>
+<div id="outline-container-org889a060" class="outline-3">
+<h3 id="org889a060"><span class="section-number-3">2.2</span> <a href="shell.html">shell</a></h3>
 </div>
-<div id="outline-container-org070fc0e" class="outline-3">
-<h3 id="org070fc0e"><span class="section-number-3">2.3</span> <a href="app_config.html">app_config</a></h3>
+<div id="outline-container-org0dd9af8" class="outline-3">
+<h3 id="org0dd9af8"><span class="section-number-3">2.3</span> <a href="app_config.html">app_config</a></h3>
 </div>
-<div id="outline-container-orga00248d" class="outline-3">
-<h3 id="orga00248d"><span class="section-number-3">2.4</span> <a href="http://stackoverflow.com/questions/5656530/how-to-use-shared-memory-with-linux-in-c">memory</a></h3>
+<div id="outline-container-org907be73" class="outline-3">
+<h3 id="org907be73"><span class="section-number-3">2.4</span> <a href="http://stackoverflow.com/questions/5656530/how-to-use-shared-memory-with-linux-in-c">memory</a></h3>
 </div>
 </div>
-<div id="outline-container-orgff5cb7b" class="outline-2">
-<h2 id="orgff5cb7b"><span class="section-number-2">3</span> Database</h2>
+<div id="outline-container-orgac82f6b" class="outline-2">
+<h2 id="orgac82f6b"><span class="section-number-2">3</span> Database</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-org840316d" class="outline-3">
-<h3 id="org840316d"><span class="section-number-3">3.1</span> <a href="mysql.html">mysql</a></h3>
+</div><div id="outline-container-org74e632b" class="outline-3">
+<h3 id="org74e632b"><span class="section-number-3">3.1</span> <a href="mysql.html">mysql</a></h3>
 </div>
-<div id="outline-container-org95ca65c" class="outline-3">
-<h3 id="org95ca65c"><span class="section-number-3">3.2</span> <a href="mongodb.html">mongoDB</a></h3>
+<div id="outline-container-org77b6728" class="outline-3">
+<h3 id="org77b6728"><span class="section-number-3">3.2</span> <a href="mongodb.html">mongoDB</a></h3>
 <div class="outline-text-3" id="text-3-2">
-</div><div id="outline-container-orgee6357f" class="outline-4">
-<h4 id="orgee6357f"><span class="section-number-4">3.2.1</span> db.collection.drop()</h4>
+</div><div id="outline-container-org05145e6" class="outline-4">
+<h4 id="org05145e6"><span class="section-number-4">3.2.1</span> db.collection.drop()</h4>
 </div>
-<div id="outline-container-orgae66eef" class="outline-4">
-<h4 id="orgae66eef"><span class="section-number-4">3.2.2</span> in python you must from bson import ObjectId to initialization a primry key</h4>
+<div id="outline-container-org971f507" class="outline-4">
+<h4 id="org971f507"><span class="section-number-4">3.2.2</span> in python you must from bson import ObjectId to initialization a primry key</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orgeb4c427" class="outline-2">
-<h2 id="orgeb4c427"><span class="section-number-2">4</span> Python</h2>
+<div id="outline-container-orgeac0349" class="outline-2">
+<h2 id="orgeac0349"><span class="section-number-2">4</span> Python</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-org0b2835d" class="outline-3">
-<h3 id="org0b2835d"><span class="section-number-3">4.1</span> <a href="syntax.html">syntax</a></h3>
+</div><div id="outline-container-orgd43e5b6" class="outline-3">
+<h3 id="orgd43e5b6"><span class="section-number-3">4.1</span> <a href="syntax.html">syntax</a></h3>
 </div>
-<div id="outline-container-org80d729d" class="outline-3">
-<h3 id="org80d729d"><span class="section-number-3">4.2</span> <a href="django.html">django</a></h3>
+<div id="outline-container-org8a7eeee" class="outline-3">
+<h3 id="org8a7eeee"><span class="section-number-3">4.2</span> <a href="django.html">django</a></h3>
 </div>
-<div id="outline-container-orga2ddd71" class="outline-3">
-<h3 id="orga2ddd71"><span class="section-number-3">4.3</span> <a href="flask.html">flask</a></h3>
+<div id="outline-container-org684a3cb" class="outline-3">
+<h3 id="org684a3cb"><span class="section-number-3">4.3</span> <a href="flask.html">flask</a></h3>
 </div>
-<div id="outline-container-org05a75e5" class="outline-3">
-<h3 id="org05a75e5"><span class="section-number-3">4.4</span> <a href="celery.html">celery</a></h3>
+<div id="outline-container-orgd336a78" class="outline-3">
+<h3 id="orgd336a78"><span class="section-number-3">4.4</span> <a href="celery.html">celery</a></h3>
 </div>
-<div id="outline-container-org4e97b8b" class="outline-3">
-<h3 id="org4e97b8b"><span class="section-number-3">4.5</span> <a href="library.html">library</a></h3>
+<div id="outline-container-orge572bc8" class="outline-3">
+<h3 id="orge572bc8"><span class="section-number-3">4.5</span> <a href="library.html">library</a></h3>
 </div>
 </div>
-<div id="outline-container-org64325bb" class="outline-2">
-<h2 id="org64325bb"><span class="section-number-2">5</span> Scala</h2>
+<div id="outline-container-org8eee425" class="outline-2">
+<h2 id="org8eee425"><span class="section-number-2">5</span> Scala</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-orgf779811" class="outline-3">
-<h3 id="orgf779811"><span class="section-number-3">5.1</span> material</h3>
+</div><div id="outline-container-orgb0dddd5" class="outline-3">
+<h3 id="orgb0dddd5"><span class="section-number-3">5.1</span> material</h3>
 <div class="outline-text-3" id="text-5-1">
-</div><div id="outline-container-org83a30b9" class="outline-4">
-<h4 id="org83a30b9"><span class="section-number-4">5.1.1</span> sbt template generator with new command</h4>
+</div><div id="outline-container-orgd4bd8de" class="outline-4">
+<h4 id="orgd4bd8de"><span class="section-number-4">5.1.1</span> sbt template generator with new command</h4>
 <div class="outline-text-4" id="text-5-1-1">
-</div><ol class="org-ol"><li><a id="org079b8b8"></a><a href="http://www.scala-sbt.org/0.13/docs/sbt-new-and-Templates.html">this is official guide</a><br  /></li></ol>
+</div><ol class="org-ol"><li><a id="orgb2ebe8b"></a><a href="http://www.scala-sbt.org/0.13/docs/sbt-new-and-Templates.html">this is official guide</a><br  /></li></ol>
 </div>
 </div>
-<div id="outline-container-org3b3cfa3" class="outline-3">
-<h3 id="org3b3cfa3"><span class="section-number-3">5.2</span> sbt slow problem</h3>
+<div id="outline-container-org05eb32c" class="outline-3">
+<h3 id="org05eb32c"><span class="section-number-3">5.2</span> sbt slow problem</h3>
 <div class="outline-text-3" id="text-5-2">
-</div><div id="outline-container-orgc5ecc76" class="outline-4">
-<h4 id="orgc5ecc76"><span class="section-number-4">5.2.1</span> replace ~/.sbt/repositories with my file in blackmagic please:)!</h4>
+</div><div id="outline-container-org79d0a2c" class="outline-4">
+<h4 id="org79d0a2c"><span class="section-number-4">5.2.1</span> replace ~/.sbt/repositories with my file in blackmagic please:)!</h4>
 </div>
-<div id="outline-container-orgaec9c96" class="outline-4">
-<h4 id="orgaec9c96"><span class="section-number-4">5.2.2</span> <a href="http://centaur.github.io/repox/">http://centaur.github.io/repox/</a></h4>
+<div id="outline-container-org0251ed9" class="outline-4">
+<h4 id="org0251ed9"><span class="section-number-4">5.2.2</span> <a href="http://centaur.github.io/repox/">http://centaur.github.io/repox/</a></h4>
 </div>
 </div>
-<div id="outline-container-orgfe13b35" class="outline-3">
-<h3 id="orgfe13b35"><span class="section-number-3">5.3</span> traning site</h3>
+<div id="outline-container-orgdce70ab" class="outline-3">
+<h3 id="orgdce70ab"><span class="section-number-3">5.3</span> traning site</h3>
 <div class="outline-text-3" id="text-5-3">
-</div><div id="outline-container-org49309cb" class="outline-4">
-<h4 id="org49309cb"><span class="section-number-4">5.3.1</span> <a href="https://www.scala-exercises.org/std_lib/asserts">scala-excerise</a></h4>
+</div><div id="outline-container-org24b89aa" class="outline-4">
+<h4 id="org24b89aa"><span class="section-number-4">5.3.1</span> <a href="https://www.scala-exercises.org/std_lib/asserts">scala-excerise</a></h4>
 </div>
 </div>
-<div id="outline-container-orgf5c2f15" class="outline-3">
-<h3 id="orgf5c2f15"><span class="section-number-3">5.4</span> knowledge</h3>
+<div id="outline-container-org9d4db17" class="outline-3">
+<h3 id="org9d4db17"><span class="section-number-3">5.4</span> knowledge</h3>
 <div class="outline-text-3" id="text-5-4">
-</div><div id="outline-container-org5576247" class="outline-4">
-<h4 id="org5576247"><span class="section-number-4">5.4.1</span> <a href="http://stackoverflow.com/questions/13052735/is-my-understanding-of-below-scala-code-correct">understanding type keyword</a></h4>
+</div><div id="outline-container-orgec8502f" class="outline-4">
+<h4 id="orgec8502f"><span class="section-number-4">5.4.1</span> <a href="http://stackoverflow.com/questions/13052735/is-my-understanding-of-below-scala-code-correct">understanding type keyword</a></h4>
 <div class="outline-text-4" id="text-5-4-1">
-</div><ol class="org-ol"><li><a id="orgc0369de"></a>type is alas of type signature<br  /></li></ol>
+</div><ol class="org-ol"><li><a id="org224e92a"></a>type is alas of type signature<br  /></li></ol>
 </div>
-<div id="outline-container-org71cf304" class="outline-4">
-<h4 id="org71cf304"><span class="section-number-4">5.4.2</span> the difference between class and object</h4>
+<div id="outline-container-org203dcfd" class="outline-4">
+<h4 id="org203dcfd"><span class="section-number-4">5.4.2</span> the difference between class and object</h4>
 <div class="outline-text-4" id="text-5-4-2">
-</div><ol class="org-ol"><li><a id="org0fb49dd"></a>A class is a definition, a description. It defines a type in terms of methods and composition of other types.<br  /></li>
-<li><a id="orge8f8a82"></a>An object is a singleton &#x2013; an instance of a class which is guaranteed to be unique. For every object in the code, an anonymous class is created, which inherits from whatever classes you declared object to implement. This class cannot be seen from Scala source code &#x2013; though you can get at it through reflection.<br  /></li></ol>
+</div><ol class="org-ol"><li><a id="orga189809"></a>A class is a definition, a description. It defines a type in terms of methods and composition of other types.<br  /></li>
+<li><a id="org0b25c8e"></a>An object is a singleton &#x2013; an instance of a class which is guaranteed to be unique. For every object in the code, an anonymous class is created, which inherits from whatever classes you declared object to implement. This class cannot be seen from Scala source code &#x2013; though you can get at it through reflection.<br  /></li></ol>
 </div>
-<div id="outline-container-org4d35857" class="outline-4">
-<h4 id="org4d35857"><span class="section-number-4">5.4.3</span> <a href="https://segmentfault.com/a/1190000005083578">::,:::,:+,+:的区别</a></h4>
+<div id="outline-container-org6a0ea7a" class="outline-4">
+<h4 id="org6a0ea7a"><span class="section-number-4">5.4.3</span> <a href="https://segmentfault.com/a/1190000005083578">::,:::,:+,+:的区别</a></h4>
 </div>
-<div id="outline-container-org93b0334" class="outline-4">
-<h4 id="org93b0334"><span class="section-number-4">5.4.4</span> <a href="http://www.brunton-spall.co.uk/post/2011/12/02/map-map-and-flatmap-in-scala/">scala map flatmap 的区别</a>   flatmap 就是把 map 拍平 也可以理解为对子结构递归 map 然后展开为 list</h4>
+<div id="outline-container-org660d680" class="outline-4">
+<h4 id="org660d680"><span class="section-number-4">5.4.4</span> <a href="http://www.brunton-spall.co.uk/post/2011/12/02/map-map-and-flatmap-in-scala/">scala map flatmap 的区别</a>   flatmap 就是把 map 拍平 也可以理解为对子结构递归 map 然后展开为 list</h4>
 </div>
-<div id="outline-container-orgfca8447" class="outline-4">
-<h4 id="orgfca8447"><span class="section-number-4">5.4.5</span> <a href="https://twitter.github.io/scala_school/collections.html#fold">scala fold foldleft foldright</a></h4>
+<div id="outline-container-org59fb45d" class="outline-4">
+<h4 id="org59fb45d"><span class="section-number-4">5.4.5</span> <a href="https://twitter.github.io/scala_school/collections.html#fold">scala fold foldleft foldright</a></h4>
 <div class="outline-text-4" id="text-5-4-5">
-</div><ol class="org-ol"><li><a id="orgfc07d68"></a>foldleft cumulate a single result using a start value and this operation start with most left in sequence<br  /><div class="outline-text-5" id="text-5-4-5-1">
+</div><ol class="org-ol"><li><a id="org9435424"></a>foldleft cumulate a single result using a start value and this operation start with most left in sequence<br  /><div class="outline-text-5" id="text-5-4-5-1">
 <div class="org-src-container">
 <pre class="src src-scala"><span style="color: #268bd2; font-weight: bold;">val</span> <span style="color: #af5fd7;">numbers</span> <span style="color: #268bd2; font-weight: bold;">=</span> <span style="color: #8700af;">1</span> until <span style="color: #8700af;">10</span>
 numbers.foldLeft<span style="color: #268bd2;">(</span><span style="color: #8700af;">0</span><span style="color: #268bd2;">)</span> <span style="color: #268bd2;">{</span> <span style="color: #8700af;">(</span>m<span style="color: #268bd2; font-weight: bold;">:</span> <span style="color: #af005f; font-weight: bold;">Int</span>, n<span style="color: #268bd2; font-weight: bold;">:</span> <span style="color: #af005f; font-weight: bold;">Int</span><span style="color: #8700af;">)</span> <span style="color: #268bd2; font-weight: bold;">=&gt;</span> println<span style="color: #8700af;">(</span><span style="color: #2aa198;">"m: "</span> + m + <span style="color: #2aa198;">" n: "</span> + n<span style="color: #8700af;">)</span>; m + n <span style="color: #268bd2;">}</span>
@@ -603,7 +578,7 @@ res0: Int = 55
 </p>
 </div></li>
 
-<li><a id="org0a4692c"></a>foldright cumulate a single result using a start value and this operation start with most right in sequence<br  /><div class="outline-text-5" id="text-5-4-5-2">
+<li><a id="orga02bde4"></a>foldright cumulate a single result using a start value and this operation start with most right in sequence<br  /><div class="outline-text-5" id="text-5-4-5-2">
 <div class="org-src-container">
 <pre class="src src-scala">numbers.foldright<span style="color: #268bd2;">(</span><span style="color: #8700af;">0</span><span style="color: #268bd2;">){</span> <span style="color: #8700af;">(</span>m<span style="color: #268bd2; font-weight: bold;">:</span> <span style="color: #af005f; font-weight: bold;">Int</span>, n<span style="color: #268bd2; font-weight: bold;">:</span> <span style="color: #af005f; font-weight: bold;">Int</span><span style="color: #8700af;">)</span> <span style="color: #268bd2; font-weight: bold;">=&gt;</span> println<span style="color: #8700af;">(</span><span style="color: #2aa198;">"m: "</span> + m + <span style="color: #2aa198;">" n: "</span> + n<span style="color: #8700af;">)</span>; m + n <span style="color: #268bd2;">}</span>
 </pre>
@@ -624,47 +599,47 @@ res0: Int = 55
 </div>
 </div>
 
-<div id="outline-container-orgbdc6dc7" class="outline-3">
-<h3 id="orgbdc6dc7"><span class="section-number-3">5.5</span> data structure</h3>
+<div id="outline-container-org8f50f19" class="outline-3">
+<h3 id="org8f50f19"><span class="section-number-3">5.5</span> data structure</h3>
 <div class="outline-text-3" id="text-5-5">
-</div><div id="outline-container-org9b855e3" class="outline-4">
-<h4 id="org9b855e3"><span class="section-number-4">5.5.1</span> <a href="http://www.scala-lang.org/api/2.12.1/scala/collection/immutable/List.html">class List and its methods</a></h4>
+</div><div id="outline-container-org0a2835f" class="outline-4">
+<h4 id="org0a2835f"><span class="section-number-4">5.5.1</span> <a href="http://www.scala-lang.org/api/2.12.1/scala/collection/immutable/List.html">class List and its methods</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orgaeb1d7b" class="outline-2">
-<h2 id="orgaeb1d7b"><span class="section-number-2">6</span> Internets</h2>
+<div id="outline-container-orge0c3b53" class="outline-2">
+<h2 id="orge0c3b53"><span class="section-number-2">6</span> Internets</h2>
 <div class="outline-text-2" id="text-6">
-</div><div id="outline-container-org5d05432" class="outline-3">
-<h3 id="org5d05432"><span class="section-number-3">6.1</span> proxychains</h3>
+</div><div id="outline-container-orgdff3e18" class="outline-3">
+<h3 id="orgdff3e18"><span class="section-number-3">6.1</span> proxychains</h3>
 <div class="outline-text-3" id="text-6-1">
-</div><ol class="org-ol"><li><a id="org987037a"></a><a href="http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/">proxychains</a><br  /></li>
-<li><a id="orgba68d7e"></a><a href="https://github.com/rofl0r/proxychains-ng">git</a><br  /></li></ol>
+</div><ol class="org-ol"><li><a id="orgfddbe69"></a><a href="http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/">proxychains</a><br  /></li>
+<li><a id="orgb0afadf"></a><a href="https://github.com/rofl0r/proxychains-ng">git</a><br  /></li></ol>
 </div>
-<div id="outline-container-org1335385" class="outline-3">
-<h3 id="org1335385"><span class="section-number-3">6.2</span> <a href="https://en.wikipedia.org/wiki/Java_servlet">java servlet</a></h3>
+<div id="outline-container-org1ff0365" class="outline-3">
+<h3 id="org1ff0365"><span class="section-number-3">6.2</span> <a href="https://en.wikipedia.org/wiki/Java_servlet">java servlet</a></h3>
 </div>
-<div id="outline-container-org907e9f5" class="outline-3">
-<h3 id="org907e9f5"><span class="section-number-3">6.3</span> <a href="https://en.wikipedia.org/wiki/Sockstress">sockstress</a></h3>
+<div id="outline-container-org80db46e" class="outline-3">
+<h3 id="org80db46e"><span class="section-number-3">6.3</span> <a href="https://en.wikipedia.org/wiki/Sockstress">sockstress</a></h3>
 </div>
 </div>
-<div id="outline-container-org5c8bd6c" class="outline-2">
-<h2 id="org5c8bd6c"><span class="section-number-2">7</span> Algorithms</h2>
+<div id="outline-container-org1bb08f5" class="outline-2">
+<h2 id="org1bb08f5"><span class="section-number-2">7</span> Algorithms</h2>
 <div class="outline-text-2" id="text-7">
-</div><div id="outline-container-orgbf65f22" class="outline-3">
-<h3 id="orgbf65f22"><span class="section-number-3">7.1</span> <a href="http://d0evi1.com/wang-jenkins-hash/">jenkins hash</a></h3>
+</div><div id="outline-container-orgd8ff66a" class="outline-3">
+<h3 id="orgd8ff66a"><span class="section-number-3">7.1</span> <a href="http://d0evi1.com/wang-jenkins-hash/">jenkins hash</a></h3>
 </div>
-<div id="outline-container-org95057a0" class="outline-3">
-<h3 id="org95057a0"><span class="section-number-3">7.2</span> algorithms</h3>
+<div id="outline-container-org249235f" class="outline-3">
+<h3 id="org249235f"><span class="section-number-3">7.2</span> algorithms</h3>
 </div>
-<div id="outline-container-org72cc1ca" class="outline-3">
-<h3 id="org72cc1ca"><span class="section-number-3">7.3</span> text book and website</h3>
+<div id="outline-container-org468dc81" class="outline-3">
+<h3 id="org468dc81"><span class="section-number-3">7.3</span> text book and website</h3>
 </div>
-<div id="outline-container-orgebf9d99" class="outline-3">
-<h3 id="orgebf9d99"><span class="section-number-3">7.4</span> data structure</h3>
+<div id="outline-container-orgbac27ec" class="outline-3">
+<h3 id="orgbac27ec"><span class="section-number-3">7.4</span> data structure</h3>
 <div class="outline-text-3" id="text-7-4">
-</div><div id="outline-container-org99321e6" class="outline-4">
-<h4 id="org99321e6"><span class="section-number-4">7.4.1</span> 一个有趣的数据结构 bloom filter</h4>
+</div><div id="outline-container-orgf3ec8dc" class="outline-4">
+<h4 id="orgf3ec8dc"><span class="section-number-4">7.4.1</span> 一个有趣的数据结构 bloom filter</h4>
 <div class="outline-text-4" id="text-7-4-1">
 <p>
 它可以在有限的内存空间内存储无限的数据，你添加数据增加的是查询时候返回错误答案的概率。
@@ -674,79 +649,79 @@ res0: Int = 55
 </div>
 </div>
 </div>
-<div id="outline-container-org9daee7a" class="outline-2">
-<h2 id="org9daee7a"><span class="section-number-2">8</span> Machine Learning</h2>
+<div id="outline-container-org9111e99" class="outline-2">
+<h2 id="org9111e99"><span class="section-number-2">8</span> Machine Learning</h2>
 <div class="outline-text-2" id="text-8">
-</div><div id="outline-container-orgaed1d12" class="outline-3">
-<h3 id="orgaed1d12"><span class="section-number-3">8.1</span> ensembling is very important !!!(at least for kaggle)</h3>
+</div><div id="outline-container-org73b92f3" class="outline-3">
+<h3 id="org73b92f3"><span class="section-number-3">8.1</span> ensembling is very important !!!(at least for kaggle)</h3>
 <div class="outline-text-3" id="text-8-1">
-</div><div id="outline-container-org3f5adbc" class="outline-4">
-<h4 id="org3f5adbc"><span class="section-number-4">8.1.1</span> <a href="http://mlwave.com/kaggle-ensembling-guide/%20">this is why</a></h4>
+</div><div id="outline-container-org39caada" class="outline-4">
+<h4 id="org39caada"><span class="section-number-4">8.1.1</span> <a href="http://mlwave.com/kaggle-ensembling-guide/%20">this is why</a></h4>
 </div>
 </div>
-<div id="outline-container-org7c8c551" class="outline-3">
-<h3 id="org7c8c551"><span class="section-number-3">8.2</span> random forest</h3>
+<div id="outline-container-org0143e04" class="outline-3">
+<h3 id="org0143e04"><span class="section-number-3">8.2</span> random forest</h3>
 <div class="outline-text-3" id="text-8-2">
-</div><div id="outline-container-orgaabf156" class="outline-4">
-<h4 id="orgaabf156"><span class="section-number-4">8.2.1</span> <a href="https://en.wikipedia.org/wiki/Random_forest">wiki</a></h4>
+</div><div id="outline-container-orge48abe7" class="outline-4">
+<h4 id="orge48abe7"><span class="section-number-4">8.2.1</span> <a href="https://en.wikipedia.org/wiki/Random_forest">wiki</a></h4>
 </div>
-<div id="outline-container-org3a9bfd3" class="outline-4">
-<h4 id="org3a9bfd3"><span class="section-number-4">8.2.2</span> <a href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">sklearn</a></h4>
+<div id="outline-container-org1d77b32" class="outline-4">
+<h4 id="org1d77b32"><span class="section-number-4">8.2.2</span> <a href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">sklearn</a></h4>
 </div>
 </div>
-<div id="outline-container-orgc20d66e" class="outline-3">
-<h3 id="orgc20d66e"><span class="section-number-3">8.3</span> activation function</h3>
+<div id="outline-container-orga3b94b2" class="outline-3">
+<h3 id="orga3b94b2"><span class="section-number-3">8.3</span> activation function</h3>
 <div class="outline-text-3" id="text-8-3">
-</div><div id="outline-container-orgfa81278" class="outline-4">
-<h4 id="orgfa81278"><span class="section-number-4">8.3.1</span> <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)">Rectifier</a></h4>
+</div><div id="outline-container-orgcc23aed" class="outline-4">
+<h4 id="orgcc23aed"><span class="section-number-4">8.3.1</span> <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)">Rectifier</a></h4>
 </div>
 </div>
-<div id="outline-container-org69326d8" class="outline-3">
-<h3 id="org69326d8"><span class="section-number-3">8.4</span> <a href="npl.html">npl</a></h3>
+<div id="outline-container-orgf66c61d" class="outline-3">
+<h3 id="orgf66c61d"><span class="section-number-3">8.4</span> <a href="npl.html">npl</a></h3>
 </div>
-<div id="outline-container-orgecc1cab" class="outline-3">
-<h3 id="orgecc1cab"><span class="section-number-3">8.5</span> <a href="tensorflow.html">tensorflow</a></h3>
+<div id="outline-container-orgbce74a2" class="outline-3">
+<h3 id="orgbce74a2"><span class="section-number-3">8.5</span> <a href="tensorflow.html">tensorflow</a></h3>
 </div>
-<div id="outline-container-org43c842b" class="outline-3">
-<h3 id="org43c842b"><span class="section-number-3">8.6</span> <a href="https://en.wikipedia.org/wiki/Scientific_notation">scientific notation</a></h3>
+<div id="outline-container-org48a577b" class="outline-3">
+<h3 id="org48a577b"><span class="section-number-3">8.6</span> <a href="https://en.wikipedia.org/wiki/Scientific_notation">scientific notation</a></h3>
 <div class="outline-text-3" id="text-8-6">
-</div><div id="outline-container-org5639f8b" class="outline-4">
-<h4 id="org5639f8b"><span class="section-number-4">8.6.1</span> <a href="http://stackoverflow.com/questions/26174531/what-is-the-meaning-of-number-1e5">so link</a></h4>
+</div><div id="outline-container-org41b90ea" class="outline-4">
+<h4 id="org41b90ea"><span class="section-number-4">8.6.1</span> <a href="http://stackoverflow.com/questions/26174531/what-is-the-meaning-of-number-1e5">so link</a></h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org19660cc" class="outline-2">
-<h2 id="org19660cc"><span class="section-number-2">9</span> Life</h2>
+<div id="outline-container-orgeec008b" class="outline-2">
+<h2 id="orgeec008b"><span class="section-number-2">9</span> Life</h2>
 <div class="outline-text-2" id="text-9">
-</div><div id="outline-container-orgd412860" class="outline-3">
-<h3 id="orgd412860"><span class="section-number-3">9.1</span> what worth fighting for</h3>
+</div><div id="outline-container-org87c0679" class="outline-3">
+<h3 id="org87c0679"><span class="section-number-3">9.1</span> what worth fighting for</h3>
 </div>
-<div id="outline-container-orgaa721b6" class="outline-3">
-<h3 id="orgaa721b6"><span class="section-number-3">9.2</span> good youtube vedio</h3>
+<div id="outline-container-org6f82fb5" class="outline-3">
+<h3 id="org6f82fb5"><span class="section-number-3">9.2</span> good youtube vedio</h3>
 </div>
 </div>
-<div id="outline-container-org48e5adb" class="outline-2">
-<h2 id="org48e5adb"><span class="section-number-2">10</span> Scheme</h2>
+<div id="outline-container-org6cb94eb" class="outline-2">
+<h2 id="org6cb94eb"><span class="section-number-2">10</span> Scheme</h2>
 <div class="outline-text-2" id="text-10">
-</div><div id="outline-container-org35ee403" class="outline-3">
-<h3 id="org35ee403"><span class="section-number-3">10.1</span> list</h3>
+</div><div id="outline-container-orgec33475" class="outline-3">
+<h3 id="orgec33475"><span class="section-number-3">10.1</span> list</h3>
 </div>
 </div>
-<div id="outline-container-org0cd1d13" class="outline-2">
-<h2 id="org0cd1d13"><span class="section-number-2">11</span> Math</h2>
+<div id="outline-container-orgfe2c092" class="outline-2">
+<h2 id="orgfe2c092"><span class="section-number-2">11</span> Math</h2>
 <div class="outline-text-2" id="text-11">
-</div><div id="outline-container-org95e8deb" class="outline-3">
-<h3 id="org95e8deb"><span class="section-number-3">11.1</span> <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean Distance</a></h3>
+</div><div id="outline-container-org58629af" class="outline-3">
+<h3 id="org58629af"><span class="section-number-3">11.1</span> <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean Distance</a></h3>
 <div class="outline-text-3" id="text-11-1">
-</div><div id="outline-container-org84ad4d9" class="outline-4">
-<h4 id="org84ad4d9"><span class="section-number-4">11.1.1</span> 常用与 svm 的 kernel,还有 perceptron 的计算中</h4>
+</div><div id="outline-container-org138f920" class="outline-4">
+<h4 id="org138f920"><span class="section-number-4">11.1.1</span> 常用与 svm 的 kernel,还有 perceptron 的计算中</h4>
 </div>
-<div id="outline-container-orgeb0f6a9" class="outline-4">
-<h4 id="orgeb0f6a9"><span class="section-number-4">11.1.2</span> 本质就是向量对自己点乘法然后开根号</h4>
+<div id="outline-container-org46c6c36" class="outline-4">
+<h4 id="org46c6c36"><span class="section-number-4">11.1.2</span> 本质就是向量对自己点乘法然后开根号</h4>
 </div>
 </div>
-<div id="outline-container-org1d93230" class="outline-3">
-<h3 id="org1d93230"><span class="section-number-3">11.2</span> <a href="https://en.wikipedia.org/wiki/Horner's_method">horner's rule</a></h3>
+<div id="outline-container-org7f904b6" class="outline-3">
+<h3 id="org7f904b6"><span class="section-number-3">11.2</span> <a href="https://en.wikipedia.org/wiki/Horner's_method">horner's rule</a></h3>
 <div class="outline-text-3" id="text-11-2">
 <p>
 說白了就是瘋狂對 x 提取公因子
@@ -754,68 +729,28 @@ res0: Int = 55
 </div>
 </div>
 
-<div id="outline-container-org6f04f08" class="outline-3">
-<h3 id="org6f04f08"><span class="section-number-3">11.3</span> 多项式公式</h3>
+<div id="outline-container-org1358a58" class="outline-3">
+<h3 id="org1358a58"><span class="section-number-3">11.3</span> 多项式公式</h3>
 </div>
-<div id="outline-container-org7433f39" class="outline-3">
-<h3 id="org7433f39"><span class="section-number-3">11.4</span> <a href="https://en.wikipedia.org/wiki/Sigmoid_function">sigmoid_function</a></h3>
+<div id="outline-container-org44bca50" class="outline-3">
+<h3 id="org44bca50"><span class="section-number-3">11.4</span> <a href="https://en.wikipedia.org/wiki/Sigmoid_function">sigmoid_function</a></h3>
 </div>
-<div id="outline-container-org2b428c3" class="outline-3">
-<h3 id="org2b428c3"><span class="section-number-3">11.5</span> <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">Collatz_conjecture</a></h3>
+<div id="outline-container-org665585f" class="outline-3">
+<h3 id="org665585f"><span class="section-number-3">11.5</span> <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">Collatz_conjecture</a></h3>
 <div class="outline-text-3" id="text-11-5">
 <p>
 <a href="http://www.ericr.nl/wondrous/index.html">website about collatz conjecture</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org1f11ac3" class="outline-3">
-<h3 id="org1f11ac3"><span class="section-number-3">11.6</span> <a href="http://www.math-prof.com/Calculus_1/Calc_Ch_06.asp">differential calculus</a></h3>
-</div>
-</div>
-<div id="outline-container-org6296fbc" class="outline-2">
-<h2 id="org6296fbc"><span class="section-number-2">12</span> font end</h2>
-<div class="outline-text-2" id="text-12">
-</div><div id="outline-container-org2a560c4" class="outline-3">
-<h3 id="org2a560c4"><span class="section-number-3">12.1</span> html boilerplateo</h3>
-<div class="outline-text-3" id="text-12-1">
-</div><div id="outline-container-org30b4f5d" class="outline-4">
-<h4 id="org30b4f5d"><span class="section-number-4">12.1.1</span> <a href="https://github.com/h5bp/html5-boilerplate">github link</a></h4>
-</div>
-</div>
-<div id="outline-container-org2f635ec" class="outline-3">
-<h3 id="org2f635ec"><span class="section-number-3">12.2</span> jQuery material</h3>
-<div class="outline-text-3" id="text-12-2">
-</div><div id="outline-container-org74d8a2d" class="outline-4">
-<h4 id="org74d8a2d"><span class="section-number-4">12.2.1</span> <a href="http://www.w3schools.com/jquery/default.asp">w3schools</a></h4>
-</div>
-</div>
-</div>
-<div id="outline-container-org605d62c" class="outline-2">
-<h2 id="org605d62c"><span class="section-number-2">13</span> resume</h2>
-<div class="outline-text-2" id="text-13">
-</div><div id="outline-container-orgf89e538" class="outline-3">
-<h3 id="orgf89e538"><span class="section-number-3">13.1</span> <a href="resume.html">resume</a></h3>
-</div>
-</div>
-<div id="outline-container-orgfb16fb6" class="outline-2">
-<h2 id="orgfb16fb6"><span class="section-number-2">14</span> uncollected</h2>
-<div class="outline-text-2" id="text-14">
-</div><div id="outline-container-orgf445c2b" class="outline-3">
-<h3 id="orgf445c2b"><span class="section-number-3">14.1</span> <a href="uncollected.html">uncollected</a></h3>
-</div>
-</div>
-<div id="outline-container-org174ae23" class="outline-2">
-<h2 id="org174ae23"><span class="section-number-2">15</span> good quotes</h2>
-<div class="outline-text-2" id="text-15">
-<p>
-“If you learn only methods, you’ll be tied to your methods. But if you learn principles, you can devise your own methods.” —Ralph Waldo Emerson
-</p>
+<div id="outline-container-org4f43976" class="outline-3">
+<h3 id="org4f43976"><span class="section-number-3">11.6</span> <a href="http://www.math-prof.com/Calculus_1/Calc_Ch_06.asp">differential calculus</a> But if you learn principles, you can devise your own methods.” —Ralph Waldo Emerson</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: mark-linux</p>
-<p class="date">Created: 2017-02-15 Wed 17:33</p>
+<p class="date">Created: 2017-02-15 Wed 18:21</p>
 <p class="validation"></p>
 </div>
 </body>
