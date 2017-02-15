@@ -137,7 +137,6 @@
 ** [[http://www.math-prof.com/Calculus_1/Calc_Ch_06.asp][differential calculus]]
 * font end
 ** html boilerplateo
-
 *** [[https://github.com/h5bp/html5-boilerplate][github link]]
 ** jQuery material
 *** [[http://www.w3schools.com/jquery/default.asp][w3schools]]
