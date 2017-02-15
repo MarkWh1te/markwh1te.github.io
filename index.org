@@ -147,3 +147,4 @@
 ** [[file:uncollected.org][uncollected]]
 * good quotes
   “If you learn only methods, you’ll be tied to your methods. But if you learn principles, you can devise your own methods.” —Ralph Waldo Emerson
+
