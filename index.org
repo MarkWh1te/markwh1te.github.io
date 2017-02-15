@@ -51,8 +51,10 @@
 **** An object is a singleton -- an instance of a class which is guaranteed to be unique. For every object in the code, an anonymous class is created, which inherits from whatever classes you declared object to implement. This class cannot be seen from Scala source code -- though you can get at it through reflection.
 *** [[https://segmentfault.com/a/1190000005083578][::,:::,:+,+:的区别]]
 *** [[http://www.brunton-spall.co.uk/post/2011/12/02/map-map-and-flatmap-in-scala/][scala map flatmap 的区别]]   flatmap 就是把 map 拍平 也可以理解为对子结构递归 map 然后展开为 list
-*** [https://twitter.github.io/scala_school/collections.html#fold][scala fold foldleft foldright]] 
-**** flodleft
+*** [[https://twitter.github.io/scala_school/collections.html#fold][scala fold foldleft foldright]] 
+****  foldleft cumulate a single result using a start value and this operation start with most left in sequence
+
+
      #+BEGIN_SRC scala
      val numbers = 1 until 10
      numbers.foldLeft(0) { (m: Int, n: Int) => println("m: " + m + " n: " + n); m + n }
@@ -71,7 +73,7 @@
       m: 45 n: 10
       res0: Int = 55
 
-**** flodright
+****  foldright cumulate a single result using a start value and this operation start with most right in sequence
      #+BEGIN_SRC scala
      numbers.foldright(0){ (m: Int, n: Int) => println("m: " + m + " n: " + n); m + n }
      #+END_SRC
