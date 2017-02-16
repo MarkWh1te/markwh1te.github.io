@@ -142,6 +142,11 @@
 ** jQuery material
 *** [[http://www.w3schools.com/jquery/default.asp][w3schools]]
 *** [[http://stackoverflow.com/questions/9887032/how-to-highlight-input-words-in-autocomplete-jquery-ui][highlight autocomplete result]]
+* Coursera
+** to learn list
+*** https://www.coursera.org/learn/programming-languages  programming languages
+*** https://www.coursera.org/learn/algorithms-part1  algorithms
+*** https://www.coursera.org/learn/progfun2 function design pattern in scala
 * resume
 ** [[file:resume.org][resume]]
 * uncollected
