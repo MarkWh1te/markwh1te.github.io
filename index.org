@@ -141,6 +141,7 @@
 *** [[https://github.com/h5bp/html5-boilerplate][github link]]
 ** jQuery material
 *** [[http://www.w3schools.com/jquery/default.asp][w3schools]]
+*** [[http://stackoverflow.com/questions/9887032/how-to-highlight-input-words-in-autocomplete-jquery-ui][highlight autocomplete result]]
 * resume
 ** [[file:resume.org][resume]]
 * uncollected
