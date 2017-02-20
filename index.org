@@ -6,6 +6,7 @@
 ** spacemacs
 *** [[https://github.com/syl20bnr/spacemacs/tree/master/layers][view layers doc]]
 *** [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Btags][tags]]
+*** [[https://yuyang0.github.io/notes/spacemacs.html][shortcut summary]]
 ** vim shortcut
 *** o 在下一行插入
 *** O 在上一行插入
