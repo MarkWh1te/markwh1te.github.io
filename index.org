@@ -137,6 +137,7 @@
    [[http://www.ericr.nl/wondrous/index.html][website about collatz conjecture]]
 
 ** [[http://www.math-prof.com/Calculus_1/Calc_Ch_06.asp][differential calculus]]
+** [[https://en.wikipedia.org/wiki/Linear_least_squares_(mathematics)][Normal Equation]]
 * font end
 ** html boilerplateo
 *** [[https://github.com/h5bp/html5-boilerplate][github link]]
