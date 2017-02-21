@@ -15,4 +15,5 @@ https://gist.github.com/jottr/a2351377b7584abf100b
 
 * gob seek
 https://www.v2ex.com/t/340385#reply4
-
+* free book
+http://freecomputerbooks.com/
