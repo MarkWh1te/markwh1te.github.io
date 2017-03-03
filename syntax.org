@@ -148,3 +148,5 @@ As explained above, use this object with the with statement (you may need to do 
 
 with DatabaseConnection() as mydbconn:
     # do stuff
+* garbage collection
+  https://www.quora.com/How-does-garbage-collection-in-Python-work
