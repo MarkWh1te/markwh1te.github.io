@@ -1,6 +1,8 @@
 #+TITLE: Flask
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+OPTIONS: ^:nil 
+* crontab run  bash
+** * */24 * * * cd /home/mark/.org && sh daily_rsync.sh
 * KILl command
   - SIGHUP	
   Hang up signal. Programs can listen for this signal and act (or not act) upon it.
@@ -13,3 +15,4 @@
 * chmod
   - [[http://www.computerhope.com/unix/uchmod.html][read info]]
 * [[https://github.com/michael-lazar/rtv][reddit terminal]]
+* command line dict [[https://linux.die.net/man/1/dict][dict]]

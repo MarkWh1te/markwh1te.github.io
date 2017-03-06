@@ -3,7 +3,7 @@
 
 ### 个人信息
  - 马天骏/男/1992 
- - 本科/上海海事大学/轮机工程及其自动化
+ - 本科/上海海事大学
  - 工作年限：1年 
  - Github：http://github.com/MarkWh1te
  - 个人网站：http://www.markwh1te.com

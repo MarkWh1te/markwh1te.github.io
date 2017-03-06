@@ -2,6 +2,8 @@
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+OPTIONS: toc:nil ^:nil 
 
+* benchmark tool
+** [[https://httpd.apache.org/docs/2.4/programs/ab.html][apache benchmark tool]]
 * File Sharing
   [[http://packages.ubuntu.com/precise/net/nfs-common][nfs-common]]
 * Xmonard 

@@ -2,6 +2,9 @@
 #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+OPTIONS:  ^:nil 
 
+* How Instgram solve python shared memory problem
+** [[https://engineering.instagram.com/dismissing-python-garbage-collection-at-instagram-4dca40b29172#.1h1f0sg0e][instagram lin]]
+** 恩 他们最后 disable 了 gc  
 * 参数传递
   对于变量（与对象相对的概念），其实，python 函数参数传递可以理解为就是变量传值操作，用 C++的方式理解，就是对 void*赋值。如果这个变量的值不变，我们看似就是引用，如果这个变量的值改变，我们看着像是在赋值。
 * Decorater
