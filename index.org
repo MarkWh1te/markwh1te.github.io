@@ -41,6 +41,7 @@
     brew 支持全局 socks 代理
     使用前加上这一句：
     export ALL_PROXY=socks5://127.0.0.1:portnumber
+    http://leegorous.net/blog/2012/08/10/how-to-skip-download-in-brew-install/
 ** proxychains
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
 **** [[https://github.com/rofl0r/proxychains-ng][git]]
