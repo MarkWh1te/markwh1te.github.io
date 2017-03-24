@@ -14,8 +14,8 @@
 *** :%s/old/new/g 全局替换
 *** :line number 跳到某一行
 *** cw 替换到 word 结尾
-*** c$ 替换到 line 结尾
 *** R 替换到结尾
+*** c$ 替换到 line 结尾
 ** org mode
 ** [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bsource-control/git][magit]]
 * Linux 
@@ -36,6 +36,11 @@
 ** [[file:celery.org][celery]]
 ** [[file:library.org][library]]
 * Internets
+** having sex with gfw
+*** homebrew fix
+    brew 支持全局 socks 代理
+    使用前加上这一句：
+    export ALL_PROXY=socks5://127.0.0.1:portnumber
 ** proxychains
 **** [[http://huifeng.me/2015/08/23/ProxyChains-NG-4-OSX-Setting/][proxychains]]
 **** [[https://github.com/rofl0r/proxychains-ng][git]]
