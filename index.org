@@ -1,5 +1,4 @@
-#+TITLE: MarkWhite Personal Wiki
-#+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
+#+TITLE: MarkWhite Personal Wiki #+HTML_HEAD: <link rel="stylesheet" href="http://markwh1te.github.io/org.css" type="text/css" >
 #+OPTIONS:  ^:nil 
 
 * Emacs
@@ -114,6 +113,7 @@
     它可以在有限的内存空间内存储无限的数据，你添加数据增加的是查询时候返回错误答案的概率。
     [[https://en.wikipedia.org/wiki/Bloom_filter][bloom filter]]
 * Machine Learning
+
 ** ensembling is very important !!!(at least for kaggle)
 *** [[http://mlwave.com/kaggle-ensembling-guide/ ][this is why]]
 ** random forest
@@ -125,6 +125,9 @@
 ** [[file:tensorflow.org][tensorflow]]
 ** [[https://en.wikipedia.org/wiki/Scientific_notation][scientific notation]]
 *** [[http://stackoverflow.com/questions/26174531/what-is-the-meaning-of-number-1e5][so link]]
+* mac
+** 恢复 cmd+m 最小化程序
+   按住 cmd + tab 激活程序切换 -> 按住 cmd 不放按 tab（shift + tab）选中程序 -> 松开 tab，按住 cmd 不放的同时按住 opt（alt）-> 松开 cmd 
 * Life
 ** what worth fighting for
 ** good youtube vedio
