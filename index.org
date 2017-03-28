@@ -103,7 +103,7 @@
       res0: Int = 55
 
 ** data structure
-*** [[http://www.scala-lang.org/api/2.12.1/scala/collection/immutable/List.html][class List and its methods]]
+*** [[http://www.scala-lang.org/api/2.12.1/scala/collection/immutable/List.html][class List and its methods]
 * Algorithms
 ** [[http://d0evi1.com/wang-jenkins-hash/][jenkins hash]]
 ** algorithms
@@ -113,7 +113,6 @@
     它可以在有限的内存空间内存储无限的数据，你添加数据增加的是查询时候返回错误答案的概率。
     [[https://en.wikipedia.org/wiki/Bloom_filter][bloom filter]]
 * Machine Learning
-
 ** ensembling is very important !!!(at least for kaggle)
 *** [[http://mlwave.com/kaggle-ensembling-guide/ ][this is why]]
 ** random forest
@@ -125,7 +124,9 @@
 ** [[file:tensorflow.org][tensorflow]]
 ** [[https://en.wikipedia.org/wiki/Scientific_notation][scientific notation]]
 *** [[http://stackoverflow.com/questions/26174531/what-is-the-meaning-of-number-1e5][so link]]
-* 
+*** 
+** GBDT
+   http://www.cnblogs.com/maybe2030/p/4734645.html
 * Life
 ** what worth fighting for
 ** good youtube vedio
