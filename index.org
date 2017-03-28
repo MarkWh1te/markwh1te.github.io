@@ -128,6 +128,7 @@
 *** 
 ** GBDT
    http://www.cnblogs.com/maybe2030/p/4734645.html
+** [[http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html][train test split]]
 * Life
 ** what worth fighting for
 ** good youtube vedio
