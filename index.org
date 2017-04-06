@@ -35,6 +35,8 @@
 ** [[file:flask.org][flask]]
 ** [[file:celery.org][celery]]
 ** [[file:library.org][library]]
+** numpy
+*** [[http://stackoverflow.com/questions/4151128/what-are-the-differences-between-numpy-arrays-and-matrices-which-one-should-i-u][ differences between numpy.matrix and numpy.array ]]
 * Internets
 ** having sex with gfw
 *** homebrew fix
