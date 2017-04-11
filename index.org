@@ -162,8 +162,6 @@
 *** https://www.coursera.org/learn/programming-languages  programming languages
 *** https://www.coursera.org/learn/algorithms-part1  algorithms
 *** https://www.coursera.org/learn/progfun2 function design pattern in scala
-* resume
-** [[file:resume.org][resume]]
 * uncollected
 ** [[file:uncollected.org][uncollected]]
 ** [[file:zhihu.org][zhihu]]
